@@ -4,7 +4,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 @mixin breakpoint($name) {
   @if $name == "xsmall" {
-    @media (max-width: 769px) {
+    @media (max-width: 767px) {
       @content;
     }
   }
@@ -590,7 +590,7 @@ $height-of-header-wo-margin: 50px;
 	padding-right: 50px;
 	background-color: #fff;
 	height: $height-of-header-wo-margin;
-	box-shadow: 0 2px 5px 0 #000;
+	box-shadow: 0 3px 3px 0 #333;
 
 	@include breakpoint('xsmall') {
 		padding-left: 0;
@@ -716,7 +716,7 @@ $height-of-header-wo-margin: 50px;
 	font-size: smaller;
 	font-style:italic;
 	line-height: 12pt;
-	padding-left: 150px;
+	padding-left: 100px;
 	margin-bottom: 40px;
 
 	@include breakpoint('xsmall') {
@@ -878,6 +878,33 @@ sup {
 		}
 	}
 
+}
+
+.nav-footer {
+	@include center-content;
+	margin-top: 60px;
+}
+
+.navigation-img {
+	height: 150px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+
+	@include click-animation;
+	&:hover, &:focus {
+		-webkit-filter: none;
+		filter: none;
+	}
+}
+
+.nav-img-right {
+	height: 150px;
+	width: auto;
+	float: right;
 }
 
 /* colors */
@@ -1075,6 +1102,9 @@ section {
 	font-family: 'ITCAvantGardeStd-Bold', Helvetica, sans-serif;
 }
 
+.footer-insta {
+	margin-bottom: 40px;
+}
 
 //-- color scheme
 /*
