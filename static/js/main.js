@@ -37,7 +37,7 @@ function collapseNavOnScroll() {
   });
 
   $(window).scroll(function() {
-      if ($(document).scrollTop() - collapseNavOnScroll.openingPos > 100) {
+      if ($(document).scrollTop() - collapseNavOnScroll.openingPos > 60) {
         $('.navbar-collapse').collapse('hide');
       }      
   });
@@ -88,10 +88,6 @@ function addFontClass( query, classToAdd ) {
     }
   }
 }
-
-$('.not-yet').click(function( event ) {
-  alert("Sorry! Still working on getting this page up. Try the banana or the bus.")
-});
 
 
 if ('addEventListener' in document) {

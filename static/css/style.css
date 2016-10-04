@@ -407,33 +407,40 @@ ul {
 .share-img {
   margin-top: 30px; }
 
-  .follow-bottom {
-    text-align: center; }
+  .public-btn img {
+    position: relative;
+    top: 4pt;
+    border: 1px solid #333;
+    height: 18pt;
+    width: auto; }
 
-    .center-text {
+    .follow-bottom {
       text-align: center; }
 
-      .logo {
-        font-family: Helvetica, sans-serif;
-        font-size: 18pt;
-        line-height: 23pt;
-        font-weight: bold;
-        color: #000;
-        text-transform: uppercase;
-        font-size: 14pt;
-        color: #000;
-        @disable-select; }
-        .logo:hover, .logo:focus {
-          transform: translate(0, -2px);
-          -webkit-transform: translate(0, -2px);
-          -ms-transform: translate(0, -2px); }
-          .logo:active {
-            transform: translate(0, 5px);
-            -webkit-transform: translate(0, 5px);
-            -ms-transform: translate(0, 5px); }
-            .logo:hover, .logo:focus {
-              color: #999;
-              text-decoration: none; }
+      .center-text {
+        text-align: center; }
+
+        .logo {
+          font-family: Helvetica, sans-serif;
+          font-size: 18pt;
+          line-height: 23pt;
+          font-weight: bold;
+          color: #000;
+          text-transform: uppercase;
+          font-size: 14pt;
+          color: #000;
+          @disable-select; }
+          .logo:hover, .logo:focus {
+            transform: translate(0, -2px);
+            -webkit-transform: translate(0, -2px);
+            -ms-transform: translate(0, -2px); }
+            .logo:active {
+              transform: translate(0, 5px);
+              -webkit-transform: translate(0, 5px);
+              -ms-transform: translate(0, 5px); }
+              .logo:hover, .logo:focus {
+                color: #999;
+                text-decoration: none; }
 
 .navbar {
   padding-left: 50px;
