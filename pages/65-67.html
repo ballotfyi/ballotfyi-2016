@@ -1,0 +1,41 @@
+imgpath: ../../static/img/error
+indexpath: ..
+<!-- PROP 65//67 -->
+
+{% extends "base.html" %}
+{% block fbtags %}
+<meta property="og:url" content="http://ballot.fyi/65-67/" />
+
+{% endblock fbtags %}
+
+{% block title %}California State Propositions – The Quick Guide to Vote Better And Harder | Prop 65 &amp; 67{% endblock title %}
+{% block content %}
+
+
+	<div class="header-spacer"></div>
+	<div class="prop-angled-bg p65-color"></div>
+	<div class="prop-banner-img p65-img"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-offset-2 col-lg-4 col-sm-offset-2 col-sm-4 col-xs-offset-0 col-xs-4">
+				<div class="prop-num p65-comp-color">65+67</div>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+				<div class="prop-title-summary">bans plastic bags and decides what to do with their revenue</div>
+			</div>
+		</div>
+		
+		<div class="line-division"></div>
+		<div class=row></div>
+			<div class="col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-xs-offset-0 col-xs-12">
+				<img class="centered" src="{{imgpath}}/shimmery.gif">
+				<div class="center-text prop-title">Woo! Okay!</div>
+				<div class="prop-text">Wahh! We're still collecting our research on this one to make sure we're presenting this in the most balanced way possible. <a href="https://tinyletter.com/ballotfyi">Subscribe</a> to stay up to date and follow us on <a target="_blank" href="https://www.instagram.com/ballotfyi/">Instagram</a> to get the information in smaller bites.</div>
+			</div>
+         
+
+	</div>
+
+
+{% endblock content%}

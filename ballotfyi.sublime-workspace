@@ -1,0 +1,744 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"plasti",
+				"plastic-bag"
+			],
+			[
+				"class",
+				"classToAdd"
+			],
+			[
+				"click",
+				"click-animation"
+			],
+			[
+				"sans",
+				"sans-serif"
+			],
+			[
+				"index-intro",
+				"index-intro-big"
+			],
+			[
+				"orang",
+				"orange-gradient-2"
+			],
+			[
+				"yel",
+				"yellow-gradient-2"
+			],
+			[
+				"purpl",
+				"purple-gradient-2"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"scrol",
+				"scrollToAnchor"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"Hel",
+				"helvetica-font"
+			],
+			[
+				"hel",
+				"helvetica-font"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"dis",
+				"disable-select"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"small",
+				"small-type"
+			],
+			[
+				"serif",
+				"serif-font"
+			],
+			[
+				"heigh",
+				"height-of-header-wo-margin"
+			],
+			[
+				"men",
+				"menu-font-size"
+			],
+			[
+				"log",
+				"logo-font-size"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"drug",
+				"drugs-gradient-2"
+			],
+			[
+				"drugs-gra",
+				"drugs-gradient-1"
+			],
+			[
+				"swift_",
+				"swift_extrabold"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"swift",
+				"swift"
+			],
+			[
+				"section",
+				"section-title-font"
+			],
+			[
+				"sub",
+				"subheadline-font"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"up",
+				"uppercase"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"new",
+				"newmedia"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"career",
+				"careers-section-title"
+			],
+			[
+				"overflow",
+				"overflow-y"
+			],
+			[
+				"header",
+				"header-padding-from-top"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"capti",
+				"capitalize"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "pages/index.html",
+			"settings":
+			{
+				"buffer_size": 1188,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/js/main.js",
+			"settings":
+			{
+				"buffer_size": 1,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "/* Reset */\nhtml,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0} \n*, *:before, *:after { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }\n\n@mixin breakpoint($name) {\n  @if $name == \"xsmall\" {\n    @media (max-width: 769px) {\n      @content;\n    }\n  }\n  @if $name == \"small\" {\n    @media (max-width: 992px) {\n      @content;\n    }\n  }\n  @else if $name == \"medium\" { //TODO: fix this\n    @media (max-width: 1200px) {\n      @content;\n    }\n  }\n  @else if $name == \"large\" {\n    @media (min-width: 1200px) {\n      @content;\n    }\n  }\n}\n@mixin border-radius($radius) {\n\tborder-radius: $radius;\n\t-webkit-border-radius: $radius;\n\t-moz-border-radius: $radius;\n}\n\n\n@mixin angle($pseudo, $flip: false, $angle: 5deg) {\n  // Possible values for $pseudo are: before, after, both\n  @if $pseudo == 'before' or $pseudo == 'after' or $pseudo == 'both' {\n    position: absolute;\n    $selector: if($pseudo == 'both', '&:before,&:after', '&:#{$pseudo}');\n\n    #{$selector} {\n      background: inherit;\n      content: '';\n      display: block;\n      height: 130%;\n      left: 0;\n      position: absolute;\n      right: 0;\n      z-index: -10;\n      -webkit-backface-visibility: hidden; // for Chrome Windows\n    }\n\n    @if $pseudo == 'both' {\n      &:before { \n        top: 0;\n\n        @if $flip {\n          transform: skewY($angle * -1);\n          transform-origin: 0 0;\n        } @else {\n          transform: skewY($angle);\n          transform-origin: 100% 0;\n        }\n      }\n\n      &:after {\n        bottom: 0;\n\n        @if $flip {\n          transform: skewY($angle * -1);\n          transform-origin: 100% 0;\n        } @else {\n          transform: skewY($angle * -1);\n          transform-origin: 100%;\n        }\n      }\n    }\n  }\n}\n\n\n\n\n\n@mixin serif-font {\n\tfont-family: Georgia, serif;\n\tcolor: #000;\n}\n\n@mixin sans-serif-font {\n\tfont-family: Helvetica, sans-serif; //-- fallback\n\tfont-size: 18pt;\n\tline-height: 23pt;\n\tfont-weight:bold;\n\tcolor: #000;\n}\n\n@mixin helvetica-font {\n\tfont-family: 'Helvetica Neue', Helvetica, 'Helvetica-bd', sans-serif;\n\tfont-weight: bold;\n\tcolor:#fff;\n}\n\n@mixin small-type {\n\tfont-size: 12pt;\n\tline-height: 18pt;\n}\n\n\n@mixin center-content {\n\tdisplay: block;\n\tmargin-left: auto;\n\tmargin-right: auto;\n}\n\n@mixin bg-gradient($color-left,$color-right) {\n\tbackground: $color-left; /* For browsers that do not support gradients */\n\tbackground: -webkit-linear-gradient(left, $color-left,$color-right);\n\tbackground: -o-linear-gradient(right, $color-left, $color-right); /* For Opera 11.1 to 12.0 */\n\tbackground: -moz-linear-gradient(right, $color-left, $color-right); /* For Firefox 3.6 to 15 */\n\tbackground: linear-gradient(to right, $color-left , $color-right); /* Standard syntax */\n\t\n}\n\n@mixin disable-select{\n    -webkit-user-select:none;\n    -moz-user-select:none;\n    -ms-user-select:none;\n    user-select:none;\n}\n\n@mixin click-animation {\n\t&:hover, &:focus {\n\t\ttransform: translate(0,-2px);\n\t\t-webkit-transform: translate(0,-2px);\n\t\t-ms-transform: translate(0,-2px);\n\t}\n\t&:active {\n\t\ttransform: translate(0,5px);\n\t\t-webkit-transform: translate(0,5px);\n\t\t-ms-transform: translate(0,5px);\n\t}\n}\n\n/* COLORS */\n$primary-color: #222;\n$link-color: rgba(10,180,195,0.5);\n\n\nhtml {\n\tmax-width: 100%;\n\toverflow-x: hidden;\n}\n\nbody {\n\tmax-width: 100%;\n\toverflow-x: hidden;\n\t@include serif-font;\n\tbackground-color: #fff;\n\t-webkit-font-smoothing: antialiased;\n\ttext-rendering: optimizeLegibility;\n\n}\n\n\np, li {\n\t@include serif-font;\n\t@include small-type;\n}\n\na {\n\ttext-decoration: none;\n\tcolor: red;\n\n\t&:hover, &:focus {\n\t\ttext-decoration: underline;\n\t\tcolor: red;\n\t}\n}\n\nem {\n\tfont-style: italic;\n}\n\nol {\n\tpadding-left: 40px;\n}\n\nh1 {\n\t@include sans-serif-font;\n\tfont-size: 28pt;\n\tline-height: 30pt;\n\tmargin-top: 100px;\n\tmargin-bottom: 10px;\n\ttext-transform: uppercase;\t\n\n\t@include breakpoint('xsmall') {\n\t\ttext-align: center;\n\t}\n}\n\nh2 {\n\t@include sans-serif-font;\n\n\tmargin-top: 100px;\n\tmargin-bottom: 5px;\n}\n\n\n\nh3 {\n\t@include sans-serif-font;\n\tfont-size: 14pt;\n\tline-height: 19pt;\n\tmargin-top: 80px;\n\tmargin-bottom: 10px;\n}\n\nh4 {\n\t@include serif-font;\n\t@include small-type;\n\n\t@include breakpoint('xsmall') {\n\t\ttext-align: center;\n\t}\n}\n\n::selection {\n  background: #eee; /* WebKit/Blink Browsers */\n}\n::-moz-selection {\n  background: #eee; /* Gecko Browsers */\n}\n\n.line-division {\n\tmargin-top: 60px;\n\tmargin-left: auto;\n\tmargin-right:auto;\n\tborder-top: 1px solid #000;\n\twidth: 20%;\n}\n\n/*----------------*/\n//-- INDEX\n\n#props {\n\tposition: relative;\n\ttop: 40px;\n}\n\n.intro {\n\tmargin-top: 50px;\n\tmargin-bottom: 90px;\n\tbackground-color: #fff;\n\tcolor: #000;\n}\n\n.index-intro-big {\n\n\tmargin-top: 100px;\n\tpadding-right: 30px;\n\tmargin-bottom: 20px;\n\t\n\tfont-family: Helvetica, sans-serif;\n\tfont-weight: bold;\n\tfont-size: 24pt;\n\tline-height: 32pt;\n\ttext-transform: uppercase;\n\t@include breakpoint('xsmall') {\n\t\tmargin-top: 50px;\n\t}\n}\n\n.bold-condensed-loaded {\n\tfont-family: 'ITCAvantGardeStd-BoldCn', Helvetica, sans-serif;\n}\n\n\n\n.index-intro-small {\n\t@include serif-font;\n\tmargin-top: 100px;\n\tpadding-top: 30px;\n\tborder-top: 3px solid #000;\n\tfont-size: 11pt;\n\tline-height: 16pt;\n\n\t@include breakpoint('xsmall') {\n\t\tmargin-top: 30px;\n\t}\n}\n\n.index-prop-section {\n\twidth: 100%;\n\tpadding-top: 25px;\n\tpadding-bottom: 25px;\n\tborder-bottom: 3px solid white;\n\tborder-left: 3px solid white;\n\tborder-right: 3px solid white;\n\n\t.container {\n\t\tpadding-bottom: 10px;\n\t}\n}\n\n\n.index-prop-title {\n\tposition: absolute;\n\twidth: 300px;\n\tz-index: 500;\n\n\t@include sans-serif-font;\n\ttext-transform: uppercase;\n\tcolor: #fff;\n\topacity: 0.9;\n\n\t@include breakpoint('xsmall') {\n\t\tfont-size: 14pt;\n\t\tline-height: 18pt;\n\t}\n}\n\n.index-make-smaller {\n\tpadding-top: 30px;\n\tpadding-bottom: 30px;\n\n\t@include breakpoint('xsmall') {\n\t\tpadding-top:50px;\n\t\tpadding-bottom: 10px;\n\t}\n}\n\n$speed: \"0.1s\";\n$transition: all #{$speed} ease-out;\n\n@mixin click-transition {\n\ttransition: $transition;\n\t-webkit-transition: $transition;\n\n}\n\n.index-prop-img {\n\timg {\n\t\t@include center-content; \n\t\tpadding-left: 200px;\n\t\theight: 250px;\n\t\twidth: auto;\n\n\t\t-webkit-filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.2)) drop-shadow(-20px 16px  rgba(0,0,0,0.1)) ;\n\t    filter: drop-shadow(12px 12px 0 rgba(0,0,0,0.2)) drop-shadow(-20px 16px  rgba(0,0,0,0.1));\n\t\t//-- cross browser bullshit\n\t    // filter: url(#drop-shadow);\n\t    // -ms-filter: \"progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#888')\";\n\t    // filter: \"progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#888')\";\n\n\t    @include disable-select;\n\n\t\t@include breakpoint('small') {\n\t\t\theight: 220px;\n\t\t}\n\n\t\t@include breakpoint('xsmall') {\n\t\t\theight: 145px;\n\t\t\tpadding-left: 50px;\n\t\t}\n\n\t\t@include click-transition;\n\t\t&:hover, &:focus {\n\t\t\ttransform: translate(0,-5px);\n\t\t\t-webkit-filter: drop-shadow(14px 15px 0px rgba(0,0,0,0.12)) drop-shadow(-23px 19px  rgba(0,0,0,0.1));\n\t\t\tfilter: drop-shadow(14px 15px 0px rgba(0,0,0,0.12)) drop-shadow(-23px 19px  rgba(0,0,0,0.1));\n\t\t\t@include click-transition;\n\t\t}\n\t\t&:active {\n\t\t\ttransform: translate(0,10px);\n\t\t\t-webkit-filter: drop-shadow(8px 2px 0px rgba(0,0,0,0.2)) drop-shadow(-2px 6px  rgba(0,0,0,0.1));\n\t\t\tfilter: drop-shadow(8px 2px 0px rgba(0,0,0,0.2)) drop-shadow(-2px 6px  rgba(0,0,0,0.1));\n\t\t\t@include click-transition;\n\t\t}\n\t}\n}\n\n.index-prop-subtitle {\n\tposition: absolute;\n\twidth: 360px;\n\tleft: 15px;\n\tbottom: 0;\n\t@include helvetica-font;\n\tfont-size: 12pt;\n\tline-height: 15pt;\n\tcolor: white;\n\n\t@include breakpoint('xsmall') {\n\t\tfont-size: 10pt;\n\t\tline-height: 12pt;\n\t\twidth: 200px;\n\t\tbottom: -10px;\n\t}\n}\n.index-prop-num {\n\tposition: absolute;\n\tright: 20px;\n\tbottom: 10px;\n\t@include helvetica-font;\n\tfont-size: 28pt;\n\tcolor: black;\n\topacity: 0.2;\n\n\t@include breakpoint('xsmall') {\n\t\tfont-size: 18pt;\n\t\tbottom: -10px;\n\t}\n}\n\n.index-bottom {\n\ttext-align: center;\n}\n\n\n/* ----------------- */\n/* ABOUT */\n\n.about-intro {\n\tmargin-bottom: 70px;\n}\n\n.about-section {\n\tmargin-bottom: 80px;\n}\n\n.about-img {\n\tpadding-top: 60px;\n\tpadding-bottom: 20px;\n\twidth: 100%;\n\theight: auto;\n}\n\n.about-title {\n\t@include sans-serif-font;\n\n\tmargin-bottom: 20px;\n\tpadding-top: 20px;\n\tborder-top: 3px solid #000;\n}\n\n.about-text {\n\t@include serif-font;\n\t@include small-type;\n}\n\n/* ----------------- */\n/* VOTE */\n\n.vote-img {\n\tdisplay: block;\n\tmargin-left: auto;\n\tmargin-right: auto;\n\n}\n\n.voteplz-shadow {\n\tz-index: -1;\n\tposition: absolute;\n\tborder-radius: 6px;\n\tmargin-left: 20px;\n\tmargin-right: 20px;\n\tmargin-top: 60px;\n\twidth: 90%;\n\theight: 109px;\n\tbackground-color: #888;\n\topacity: .075;\n\n\t&:hover, &:focus {\n\t\tbackground-color: red;\n\t}\n\n}\n\n.voteplz-btn {\n\tmargin-top: 40px;\n\tpadding-top: 20px;\n\tpadding-bottom: 20px;\n\tborder-radius: 6px;\n\tbackground-color: transparent;\n\tbox-shadow: inset 0 0 0 2px #333;\n\t-moz-box-shadow: inset 0 0 0 2px #333;\n\t-webkit-box-shadow: inset 0 0 0 2px #333;\n\t-webkit-filter: grayscale(100%);\n\tfilter: grayscale(100%);\n\t@include disable-select;\n\n\t@include click-animation;\n\n\t&:hover, &:focus {\n\t\tbox-shadow: inset 0 0 0 2px #f0353e;\n\t\t-webkit-box-shadow: inset 0 0 0 2px #f0353e;\n\t\t-moz-box-shadow: inset 0 0 0 2px #f0353e;\n\t\t-webkit-filter: none;\n\t\tfilter: none;\n\t}\n }\n\n\n\n.follow-img, .share-img {\n\tmargin-top: 60px;\n\timg {\n\t\twidth: 100%;\n\t\theight: auto;\n\t\tdisplay:block;\n\t\tmargin-left: auto;\n\t\tmargin-right: auto;\n\t\t-webkit-filter: grayscale(100%);\n\t\tfilter: grayscale(100%);\n\n\t\t@include breakpoint('xsmall') {\n\t\t\tmargin-bottom: -40px;\n\t\t}\n\n\t\t@include click-animation;\n\t\t&:hover, &:focus {\n\t\t\tfilter: none;\n\t\t\t-webkit-filter: none;\n\t\t}\n\t}\n}\n\n.share-img{\n\tmargin-top: 30px;\n}\n\n.follow-bottom {\n\ttext-align: center;\n}\n\n\n\n\n/* ----------------- */\n/* HEADER */\n\n$logo-font-size: 14pt;\n$menu-font-size: 12pt;\n$height-of-header-wo-margin: 50px;\n\n.logo {\n\t@include sans-serif-font;\n\ttext-transform:uppercase;\n\tfont-size: $logo-font-size;\n\n\tcolor: #000;\n\n\t@include click-animation;\n\n\t&:hover, &:focus {\n\t\tcolor: #999;\n\t\ttext-decoration: none;\n\t}\n\n\t@disable-select;\n}\n\n//-- override of bootstrap theme\n.navbar {\n\tpadding-left: 50px;\n\tpadding-right: 50px;\n\tbackground-color: #fff;\n\theight: $height-of-header-wo-margin;\n\tbox-shadow: 0 2px 5px 0 #000;\n\n\t@include breakpoint('xsmall') {\n\t\tpadding-left: 0;\n\t\tpadding-right: 0;\n\t}\n\n}\n\n.icon-bar {\n\tbackground-color: #000;\n}\n\n.navbar-nav > li > a { //-- jesus\n\t&:active {\n\t\tcolor: #444;\n\t}\n\t&:hover, &:focus {\n\t\tbackground-color: transparent;\n\t\tcolor: #999;\n\t}\n}\n\n.navbar-collapse {\n\t@include breakpoint('xsmall') {\n\t\tbackground-color: #222;\n\t}\n}\n\n\n.header-button > a {\n\tfont-family: sans-serif;\n\tfont-size: $menu-font-size;\n\tmargin-left: 30px;\n\tcolor: #000;\n\n\t@include breakpoint('xsmall') {\n\t\tcolor: #fff;\n\t}\n\t@include click-animation;\n\n}\n//--- /override\n\n.header-spacer {\n\tmargin-top: $height-of-header-wo-margin;\n}\n\n/* PROP */\n/* ----------------- */\n\n\n.acronym {\n\tcolor: inherit;\n}\n\n.prop-num {\n\tmargin-top: 50px;\n\t@include helvetica-font;\n\tfont-size: 120pt;\n\n\ttext-align:right;\n\t@include disable-select;\n\t@include breakpoint('xsmall') {\n\t\ttext-align: left;\n\t}\n\n}\n.prop-title-summary {\n\tfloat: left;\n\tmargin-left: -15px;\n\tpadding-right: 15px;\n\tmargin-top: 110pt;\n\tmargin-bottom: 120px;\n\tfont-family: sans-serif;\n\tfont-weight: normal;\n\tcolor: #fff;\n\tfont-size: 22pt;\n\tline-height: 27pt;\n\n\t@include breakpoint('xsmall') {\n\t\tpadding-right: 0;\n\t\twidth: 160px;\n\t\tmargin-top: 60px;\n\t\tmargin-left: 30px;\n\t\tfont-size: 16pt;\n\t\tline-height: 20pt;\n\t}\n\n}\n\n.prop-title {\n\tmargin-top: 60px;\n\tmargin-bottom: 20px;\n\n\t@include sans-serif-font;\n}\n\n.prop-text {\n\t@include serif-font;\n\t@include small-type;\n}\n\n.prop-inline-img {\n\twidth: 100%;\n\theight: auto;\n\tdisplay: block;\n\tmargin-left: auto;\n\tmargin-right: auto;\n\tmargin-top: 30px;\n\tmargin-bottom: 10px;\n}\n\n.inline-img-caption {\n\tfont-size: smaller;\n\tfont-style:italic;\n\tmargin-bottom: 40px;\n}\n\n.prop-angled-bg {\n\tposition: relative;\n\ttop: 200px;\n\tz-index: -999;\n\tbackground-color: #bbb;\n\twidth: 130%;\n\theight: 90px;\n\t@include angle(both, true);\n\n\n\n\t@include breakpoint('xsmall') {\n\t\ttop: 110px;\n\t\theight: 160px;\n\t}\n\n\t@include breakpoint('large') {\n\t\ttop: 140px;\n\t\theight: 160px;\n\t}\n}\n\n.prop-banner-img {\n\tposition: absolute;\n\ttop: 340px;\n\theight: 80px;\n\twidth: 100%;\n\tbackground-repeat: repeat-x;\n\tbackground-size: contain;\n\n\t@include breakpoint('xsmall') {\n\t\theight: 50px;\n\t\ttop: 280px;\n\t}\n}\n\n.prop-factors-section {\n\tmargin-top: 20px;\n}\n\n.prop-factors {\n\t@include helvetica-font;\n\tcolor: #000;\n\tfont-size: 12pt;\n\tline-height: 24pt;\n\twidth: 180px;\n\tfloat: left;\n\n}\n\n.prop-sources {\n\t@include helvetica-font;\n\tcolor: #000;\n\tfont-weight: normal;\n\tfont-size: 10pt;\n\tline-height: 14pt;\t\n}\n\n.prop-sources-title {\n\tmargin-top: 10px;\n\tfont-weight: bold;\n}\n\n.prop-chat-source {\n\tfont-size: 11pt;\n\ta {\n\t\tcolor: #999;\n\t}\n}\n\n.source-left {\n\tfloat: left;\n\tpadding-left: 20px;\n}\n\n.source-right {\n\tfloat: right;\n\tpadding-right: 20px;\n}\n\n\n.emoji {\n\tfont-size:16pt;\n\tline-height: 24pt;\n}\n.emoji-lg {\n\tfont-size:24pt;\n\tline-height: 28pt;\n}\n\n.prop-factor-answers {\n\tline-height: 24pt;\n}\n\n.faded {\n\topacity: 0.2;\n}\n\nsup {\n\tfont-family: Helvetica, Arial, sans-serif;\n\tfont-size: 8pt;\n\tcolor: #777;\n}\n\n.prop-quote {\n\tmargin-top: 20px;\n\tmargin-bottom: 20px;\n\tfont-size: 18pt;\n\tline-height: 28pt;\n\tfont-style: italic;\n\tcolor: #aaa;\n\n}\n\n.quote-author {\n\tfloat: right;\n\ttext-align: right;\n\n}\n\n\n\n/* FOOTER */\n\n.project-page-footer {\n\theight: 200px;\n}\n\n.footer {\n\t// margin-top: 100px;\n\tbackground-color: #fff;\n\tpadding-top: 50px;\n\tmargin-bottom: 100px;\n\n\tfont-family: Georgia;\n\tfont-size: 9pt;\n\tline-height: 13pt;\n\tcolor: #000;\n\n\n\ttext-align: center;\n\n\n\ta {\n\t\tbackground-color: transparent;\n\t\ttext-decoration: none;\n\t\tcolor: #000;\n\n\t\t&:hover, &:focus {\n\t\t\tcolor: red;\n\t\t\topacity: 0.75;\n\t\t}\n\t}\n\n}\n\n/* colors */\n\n/*\nyellow - drugs - 56 61 64\norange - plastic - 60 65 67\npink - meta - 52 53 58 59\npurple - money - 51 55\nblue - death 57 62 63 66\n*/\n\n\n//-- orange\n$orange-gradient-1: rgb(255,181,88);\n$orange-gradient-2: rgb(255,126,44);\n.p60-color, .p65-color, .p67-color {\n\t@include bg-gradient ($orange-gradient-1, $orange-gradient-2);\n}\n\n//-- yellow\n$yellow-gradient-1: rgb(255,217,136);\n$yellow-gradient-2: rgb(255,178,80);\n.p56-color, .p61-color, .p64-color {\n\t@include bg-gradient ($yellow-gradient-1, $yellow-gradient-2);\n}\n\n//-- magenta\n$pink-gradient-1: rgb(255,67,174);\n$pink-gradient-2: rgb(255,32,118);\n.p51-color, .p55-color {\n\t@include bg-gradient ($pink-gradient-1, $pink-gradient-2);\n}\n\n//-- purple\n$purple-gradient-1: rgb(230,100,243);\n$purple-gradient-2: rgb(200,52,227);\n.p52-color, .p53-color, .p54-color, .p58-color, .p59-color {\n\t@include bg-gradient ($purple-gradient-1, $purple-gradient-2);\n}\n\n//-- blue\n$blue-gradient-1: rgb(191,228,255);\n$blue-gradient-2: rgb(139,197,255);\n.p57-color, .p66-color, .p62-color, .p63-color {\n\t@include bg-gradient ($blue-gradient-1, $blue-gradient-2);\n}\n\n.p60-comp-color, .p65-comp-color, .p67-comp-color {\n\tcolor: $orange-gradient-2;\n}\n.p56-comp-color, .p61-comp-color, .p64-comp-color {\n\tcolor: $yellow-gradient-2;\n}\n.p51-comp-color, .p55-comp-color {\n\tcolor: $pink-gradient-2;\n}\n.p52-comp-color, .p53-comp-color, .p54-comp-color, .p58-comp-color, .p59-comp-color {\n\tcolor: $purple-gradient-2;\n}\n.p57-comp-color, .p66-comp-color, .p62-comp-color, .p63-comp-color {\n\tcolor: $blue-gradient-2;\n}\n\n.p51-img { background-image: url(../img/index/schoolbus.png);}\n.p52-img { background-image: url(../img/index/ambulance.png); }\n.p53-img { background-image: url(../img/index/checkbook.png); }\n.p54-img { background-image: url(../img/index/mac.png); }\n.p55-img { background-image: url(../img/index/monopoly-car.png); }\n.p56-img { background-image: url(../img/index/cigarettes.png); }\n.p57-img { background-image: url(../img/index/hamburglar.png); }\n.p58-img { background-image: url(../img/index/rosetta.png); }\n.p59-img { background-image: url(../img/index/corporation.png); }\n.p60-img { background-image: url(../img/index/banana.png); }\n.p61-img { background-image: url(../img/index/bottles.png); }\n.p62-img { background-image: url(../img/index/syringe.png); }\n.p63-img { background-image: url(../img/index/ak-47.png); }\n.p64-img { background-image: url(../img/index/marijuana-leaf.png); }\n.p65-img { background-image: url(../img/index/polar-bear.png); }\n// .p66-img { background-image: url(../img/index/petition.png); }\n.p67-img { background-image: url(../img/index/plastic-bag.png); }\n\n\n\n\n//-- CSS for speech bubbles\n//-- thanks to Samuel Kraft for the css\n//-- https://codepen.io/samuelkraft/pen/Farhl/\n\nsection {\n\t@include helvetica-font;\n\tfont-size: 13pt;\n\tfont-weight: normal;\n\n\tmax-width: 355px;\n\tmargin: 40px auto;\n\n\tdiv {\n\t\tmax-width: 255px;\n\t\tword-wrap: break-word;\n\t\tmargin-bottom: 10px;\n\t    line-height: 22px;\n\t}\n}\n\n.clear {clear: both}\n.from-me {\n\tposition:relative;\n\tpadding:10px 20px;\n\tcolor:white; \n\tbackground:#0B93F6;\n\tborder-radius:25px;\n\tfloat: right;\n\t\t\n\t&:before {\n\t\tcontent:\"\";\n\t\tposition:absolute;\n\t\tz-index:-1;\n\t\tbottom:-2px;\n\t\tright:-7px;\n\t\theight:20px;\n\t\tborder-right:20px solid #0B93F6;\n\t\tborder-bottom-left-radius: 16px 14px;\n\t\t-webkit-transform:translate(0, -2px);\n\t}\n\n\t&:after {\n\t\tcontent:\"\";\n\t\tposition:absolute;\n\t\tz-index:1;\n\t\tbottom:-2px;\n\t\tright:-56px;\n\t\twidth:26px;\n\t\theight:20px;\n\t\tbackground:white;\n\t\tborder-bottom-left-radius: 10px;\n\t\t-webkit-transform:translate(-30px, -2px);\n\t}\n}\n.from-them {\n\tposition:relative;\n\tpadding:10px 20px;\n\tbackground:#E5E5EA;\n\tborder-radius:25px;\n\tcolor: black;\n\tfloat: left;\n\t\t\n\t&:before {\n\t\tcontent:\"\";\n\t\tposition:absolute;\n\t\tz-index:2;\n\t\tbottom:-2px;\n\t\tleft:-7px;\n\t\theight:20px;\n\t\tborder-left:20px solid #E5E5EA;\n\t\tborder-bottom-right-radius: 16px 14px;\n\t\t-webkit-transform:translate(0, -2px);\n\t}\n\n\t&:after {\n\t\tcontent:\"\";\n\t\tposition:absolute;\n\t\tz-index:3;\n\t\tbottom:-2px;\n\t\tleft:4px;\n\t\twidth:26px;\n\t\theight:20px;\n\t\tbackground:white;\n\t\tborder-bottom-right-radius: 10px;\n\t\t-webkit-transform:translate(-30px, -2px);\n\t}\n}\n\n.social {\n\tdisplay: block;\n\tmargin-left: auto;\n\tmargin-right: auto;\n\tmargin-bottom: 20px;\n}\n\n.fb-send {\n\tmargin-left: 2px;\n}\n\n.twitter-share-button {\n\tmargin-left: 1px;\n\tmargin-bottom: -5px;\n}\n\n.book-type-loaded {\n\tfont-family: 'ITCAvantGardeStd-Bk', sans-serif !important;\n}\n\n.bold-type-loaded {\n\tfont-family: 'ITCAvantGardeStd-Bold', Helvetica, sans-serif;\n}\n\n//-- color scheme\n/*\nsolid colors\n-----------\nyellow\tFFB250\nmagenta\tFF2076\npruple\tC834E3\nblue\t8BC5FF\norange\tFF7E2C\n\n-\nyellow\tFFD988\tFFB250\nmagenta\tFF43AE\tFF2076\npurple\tE664F3\tC834E3\nblue\tBFE4FF\t8BC5FF\norange\tFFB558\tFF7E2C\n\n\norange on purple\npurple on orange\nyellow on magenta\nblue on yellow\nmagenta on blue\n*/\n.ig-b- { display: inline-block; }\n.ig-b- img { visibility: hidden; }\n// .ig-b-:hover { background-position: 0 -60px; }\n// .ig-b-:active { background-position: 0 -120px; }\n.ig-b-16 { \n\twidth: 22px; \n\theight: 22px; \n\tmargin-left: 1px;\n\tbackground-image: url(../img/action/insta.png); \n\tbackground-size: contain;\n}\n@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {\n.ig-b-16 { \n\tbackground-image: url(../img/action/insta.png); \n\tbackground-size: 60px 178px; \n\tbackground-size: contain;\n\t} \n}\n\n",
+			"file": "static/css/style.scss",
+			"file_size": 19794,
+			"file_write_time": 131194315620000000,
+			"settings":
+			{
+				"buffer_size": 19794,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config.json",
+			"settings":
+			{
+				"buffer_size": 160,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "lint",
+		"selected_items":
+		[
+			[
+				"lint",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"set syntax pyth\t",
+				"Set Syntax: Python"
+			],
+			[
+				"mel",
+				"Set Syntax: MEL"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instl",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"packag",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/jimmy/Documents/side projects/web/ballotfyi"
+	],
+	"file_history":
+	[
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/58/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/64/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/53/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/54/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/56/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/59/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/60/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/63/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/templates/disclaimer.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/51/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/takeaction/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/Gruntfile.js",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/about/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/templates/base.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/static/js/main.js",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/templates/scripts.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/node_modules/jquery-lazyload/README.md",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/templates/stylesheets.html",
+		"/Users/jimmy/Desktop/jquery.js",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/static/css/style.scss",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/static/css/bootstrap.min.css",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/static/css/fonts.scss",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/static/js/fontfaceobserver.js",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/vote/index.html",
+		"/Users/jimmy/Downloads/Gruntfile.js",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/follow/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/dist/index.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/node_modules/Gruntfile.js",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/static/css/style.css",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/terms/index.html",
+		"/Users/jimmy/Downloads/export.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/static/css/fonts.css",
+		"/Users/jimmy/Desktop/todo",
+		"/Users/jimmy/Desktop/hanover-6-22",
+		"/Users/jimmy/Desktop/Blumen Lumen presentation",
+		"/Users/jimmy/Desktop/full, unfiltered resume",
+		"/Users/jimmy/Desktop/Marshall and minnie",
+		"/Users/jimmy/Desktop/spinning mirrors/checklist.txt",
+		"/Users/jimmy/Desktop/xdata-reference.txt",
+		"/Users/jimmy/Documents/side projects/web/random-subtle-pattern/README.md",
+		"/Users/jimmy/Desktop/maya experiments/artichoke/scripts/makeartichoke.py",
+		"/Users/jimmy/Desktop/output.R",
+		"/Users/jimmy/Desktop/map.carbon.soil.rare.txt",
+		"/Users/jimmy/Desktop/otu.carbon.soil.rare_t.txt",
+		"/Users/jimmy/Desktop/onewheeldata/README.md",
+		"/Users/jimmy/Dropbox/riboscience site/00 administrative/licenses/third-party-frameworks/jquery.txt",
+		"/Users/jimmy/Dropbox/riboscience site/00 administrative/licenses/third-party-frameworks/d3js.txt",
+		"/Users/jimmy/Dropbox/riboscience site/00 administrative/licenses/third-party-frameworks/bootstrap.txt",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/pages/team/index.html",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/css/style.css",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/pages/index.html",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/pages/careers/index.html",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/templates/base.html",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/css/fonts.scss",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/pages/pipeline/index.html",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/pages/careers.html",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/css/fonts.css",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/js/main.js",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/css/fonts.scss.css",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/config.rb",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/.build/index.html",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/css/style.scss",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/README.md",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/pages/error.html",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/css/style.css.map",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/css/main.scss",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/sass/style.scss",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/sass/style.css",
+		"/Users/jimmy/Dropbox/riboscience site/02 implementation/riboscience/static/css/style.sass",
+		"/Users/jimmy/Documents/side projects/web/blumenlumen/blumenlume.sublime-project",
+		"/Users/jimmy/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/jimmy/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/jimmy/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/jimmy/Library/Application Support/Sublime Text 3/Packages/User/Python.sublime-settings",
+		"/Users/jimmy/Dropbox/freelance/riboscience/proposal.txt",
+		"/Users/jimmy/Dropbox/certificates/sublime text 2 license"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"No",
+			"58",
+			"54",
+			"weed",
+			"54",
+			"8",
+			"59",
+			"future",
+			"important",
+			"\"index-prop-subtitle\"",
+			"index-prop-num",
+			"prop-",
+			"img",
+			"advisory",
+			"summ",
+			"how",
+			"🤔",
+			"59",
+			"53",
+			"stripe",
+			"🤔",
+			"51",
+			"-",
+			"h2",
+			"index-make-smaller",
+			"index-make-smaller ",
+			"{{imgpath}}",
+			"img",
+			"src",
+			"class=\"not-yet\"",
+			"yet",
+			"class=\"not-yet\"",
+			"58",
+			"8",
+			"59",
+			"57",
+			"65",
+			"-",
+			"53",
+			"65",
+			"url",
+			"-color",
+			"p60",
+			"51",
+			"\"not-yet\" ",
+			"click",
+			"<a class=\"not-yet\" href=\"\">",
+			"<a href=\"\">",
+			"<div class=\"row\">",
+			"logo",
+			"props",
+			"#props",
+			"s",
+			"#prop",
+			"#props",
+			"hover",
+			"contain",
+			"url",
+			"img",
+			"images",
+			"static",
+			"fb",
+			"60",
+			"h2",
+			"emoji",
+			"h3",
+			"space",
+			"spacer",
+			"h3",
+			"h2",
+			"<script",
+			"script",
+			"768",
+			"'b",
+			"book",
+			"itc",
+			"helvetica",
+			"helv",
+			"helvetica",
+			"sans-serif-font",
+			"sans-serif",
+			"active",
+			"true",
+			"active",
+			"png",
+			"sup",
+			"5",
+			"2",
+			"<a",
+			"3",
+			"5",
+			"4",
+			"2",
+			"\"\">",
+			"\">",
+			"<a ",
+			"</a>",
+			"/a>",
+			"ht",
+			"straight",
+			"@include bg-gradient ($pink-gradient-1, $pink-gradient-2);",
+			"color",
+			"-color",
+			"prop-num",
+			"prop-[0-9]",
+			"prop-63",
+			"prop-",
+			"prop",
+			"img",
+			"index",
+			"style=\"padding-top:30px;padding-bottom:30px;\"",
+			"-num\"",
+			"spacer",
+			"a {",
+			"acro",
+			"acronym",
+			"attr",
+			"60",
+			"ndex-prop-title\"",
+			"prop-num",
+			"<a href=\"#2\">[2]</a>",
+			"margin",
+			"prop-",
+			"prop-section",
+			"index",
+			"summary",
+			"itc",
+			"prop"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "pages/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1188,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1188,
+								1188
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "static/js/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 166.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "static/css/style.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10821,
+								10821
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 8084.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "config.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ballotfyi.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 199.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

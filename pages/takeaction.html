@@ -1,0 +1,56 @@
+imgpath: ../../static/img/action
+indexpath: ..
+<!-- FOLLOW -->
+
+{% extends "base.html" %}
+{% block content %}
+
+	<div class="header-spacer"></div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-offset-2 col-lg-6 col-sm-offset-3 col-sm-6 col-xs-offset-1 col-xs-10">
+				<h1>Here's what you can do right now (in order of importance)</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-offset-4 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-offset-0 col-xs-12">
+				<h2><span class="emoji-lg">👍</span> Check that you're registered</h2>
+				<p> We know California will go to Hillary, but you have a say in all these propositions. In California, it's the law that you can get paid time off to vote.  Check it out at <a target="_blank" href="http://voteplz.org">voteplz.org</a>. October 24 deadline!</p>
+				<div class="voteplz-shadow"></div>
+				<a target="_blank" href="http://voteplz.org"><div class="voteplz-btn"><img class="vote-img" src="https://www.voteplz.org/assets/logo-ebbea891a4f889aa7c836f09d84c73fd.svg"></div></a>
+			</div>
+		</div>
+
+		<div class="line-division"></div>
+
+		<div class="row">
+			<div class="col-lg-offset-4 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-offset-0 col-xs-12">
+				<h2><span class="emoji-lg">✍️</span> Educate your friends</h2>
+				
+				<p>A simple <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fballot.fyi%2F&display=popup&ref=plugin&src=like&app_id=1134187086655814">click</a> and your friends could be a lot more informed. Please give them the tools to know more.</p>
+				
+				<div class="share-img">
+					<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fballot.fyi%2F&amp;src=sdkpreparse"><img src="{{imgpath}}/share.png"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="line-division"></div>
+		<div class="row">
+			<div class="col-lg-offset-4 col-lg-4 col-sm-offset-3 col-sm-6 col-xs-offset-0 col-xs-12">
+				<h2><span class="emoji-lg">🖖</span>Subscribe and/or follow us</h2>
+
+				<p><a target="_blank" href="https://tinyletter.com/ballotfyi">Sign up</a> for our email digests, or follow us on Instagram <a target="_blank" href="http://instagram.com/ballotfyi">@ballotfyi</a> and stay up-to-date on these issues. We'll post updates and tiny bits of info every other day until Nov 8.</p>
+			</div>
+
+			<div class="follow-img col-lg-offset-4 col-lg-4 col-md-offset-3 col-md-6 col-sm-offset-1 col-sm-10 col-xs-offset-0 col-xs-12">
+				<a target="_blank" href="http://instagram.com/ballotfyi"><img src="{{imgpath}}/follow.png"></a>
+			</div>
+		</div>
+		
+
+
+	</div>
+
+{% endblock content%}
