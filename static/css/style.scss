@@ -669,6 +669,11 @@ $height-of-header-wo-margin: 50px;
 
 .acronym {
 	color: inherit;
+	text-decoration:underline;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
 .prop-num {
@@ -797,6 +802,18 @@ $height-of-header-wo-margin: 50px;
 	width: 180px;
 	float: left;
 
+}
+
+.prop-discussion {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	@include helvetica-font;
+	color: #000;
+	font-weight: normal;
+	font-size: 10pt;
+	line-height: 14pt;	
+	padding-left: 20px;
+	border-left: 3px solid #000;
 }
 
 .prop-sources {

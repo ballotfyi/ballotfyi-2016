@@ -26,7 +26,8 @@ function expandAcronym() {
     targetID = event.currentTarget.id;
     $('#' + targetID).text($('#' + targetID).attr('data-expanded'))
       .css('text-decoration', 'none')
-      .css('color','inherit');
+      .css('color','inherit')
+      .css('cursor', 'default');
   });
 }
 
