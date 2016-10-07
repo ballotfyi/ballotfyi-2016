@@ -995,6 +995,12 @@ $blue-gradient-2: rgb(139,197,255);
 	@include bg-gradient ($blue-gradient-1, $blue-gradient-2);
 }
 
+$gray0: 130;
+$gray1: 90;
+.general-color {
+	@include bg-gradient (rgb($gray0,$gray0,$gray0),rgb($gray1,$gray1,$gray1));
+}
+
 .p60-comp-color, .p65-comp-color, .p67-comp-color {
 	color: $orange-gradient-2;
 }
