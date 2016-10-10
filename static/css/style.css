@@ -958,6 +958,9 @@ ul {
       border-bottom-right-radius: 10px;
       -webkit-transform: translate(-30px, -2px); }
 
+.from-me a, .from-them a {
+  color: white; }
+
 .social {
   display: block;
   margin-left: auto;

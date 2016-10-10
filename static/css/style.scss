@@ -1066,7 +1066,7 @@ section {
 	background:#0B93F6;
 	border-radius:25px;
 	float: right;
-		
+
 	&:before {
 		content:"";
 		position:absolute;
@@ -1123,6 +1123,12 @@ section {
 		background:white;
 		border-bottom-right-radius: 10px;
 		-webkit-transform:translate(-30px, -2px);
+	}
+}
+
+.from-me, .from-them {
+	a {
+		color: white;
 	}
 }
 
