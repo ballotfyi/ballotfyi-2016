@@ -239,10 +239,10 @@ ul {
 }
 
 ::selection {
-  background: #eee; /* WebKit/Blink Browsers */
+  background: #ccc; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #eee; /* Gecko Browsers */
+  background: #ccc; /* Gecko Browsers */
 }
 
 .line-division {
@@ -606,7 +606,7 @@ $height-of-header-wo-margin: 50px;
 		text-decoration: none;
 	}
 
-	@disable-select;
+	@include disable-select;
 }
 
 //-- override of bootstrap theme

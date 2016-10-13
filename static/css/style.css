@@ -123,10 +123,10 @@ ul {
   margin-bottom: 20px; }
 
   ::selection {
-    background: #eee; }
+    background: #ccc; }
 
     ::-moz-selection {
-      background: #eee; }
+      background: #ccc; }
 
       .line-division {
         margin-top: 60px;
@@ -445,7 +445,10 @@ ul {
           text-transform: uppercase;
           font-size: 14pt;
           color: #000;
-          @disable-select; }
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none; }
           .logo:hover, .logo:focus {
             transform: translate(0, -2px);
             -webkit-transform: translate(0, -2px);
