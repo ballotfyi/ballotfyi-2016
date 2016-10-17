@@ -123,10 +123,10 @@ ul {
   margin-bottom: 20px; }
 
   ::selection {
-    background: #ccc; }
+    background: #ddd; }
 
     ::-moz-selection {
-      background: #ccc; }
+      background: #ddd; }
 
       .line-division {
         margin-top: 60px;
