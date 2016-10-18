@@ -1,6 +1,5 @@
 {% verbatim %}
 User-agent: *
-Disallow: /static
 
 Sitemap: /sitemap.xml
 {% endverbatim %}
