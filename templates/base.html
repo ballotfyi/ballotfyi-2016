@@ -22,7 +22,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="A non-partisan guide to all of the California state ballot propositions. Simplified and unbiased.">
+	{% block meta-description %}<meta name="description" content="A non-partisan guide to all of the California State Ballot Propositions. Simplified and unbiased.">{% endblock meta-description %}
 	<meta name="keywords" content="California state propositions, voter guide, nonpartisan, simplified, explained">
 	<meta name="author" content="Citizen & Citizens">
 	<link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
@@ -30,6 +30,33 @@
 	<meta http-equiv="max-age" content="86400" />
 	<link rel="apple-touch-icon-precomposed" href="{% static '/img/apple-touch-icon-precomposed.png' %}"><!-- 57×57px -->
 	<link rel="icon" sizes="192x192" href="{% static '/img/touch-icon-192x192.png' %}">
+
+	<script type="application/ld+json">
+	{
+	  "@context": "http://schema.org",
+	  "@type": "WebSite",
+	  "name": "ballot.fyi",
+	  "headline":"California State Propositions for Busy People - Summarized and Explained",
+	  "description":"The quickest, nonpartisan voter guide.",
+	  "author":{
+	    "@type": "Organization",
+	    "name": "Citizen & Citizens",
+	    "email": "fax@ballot.fyi",
+	    "founder": "Jimmy Chion",
+	    "logo": "https://s3.amazonaws.com/ballot.fyi/static/img/share-twit.png"
+	  },
+	  "image":{
+	  	"@type":"ImageObject",
+	    "URL": "https://s3.amazonaws.com/ballot.fyi/static/img/share-twit.png",
+	    "representativeOfPage": "true"
+	  },
+	  "url": "http://ballot.fyi",
+	  "sameAs": [
+	    "https://www.facebook.com/ballotfyi/",
+	    "https://instagram.com/ballotfyi/"
+	  ]
+	}
+	</script>
 
 	{% block stylesheets %}
 		{% include 'stylesheets.html' %}

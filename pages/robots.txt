@@ -1,5 +1,5 @@
 {% verbatim %}
 User-agent: *
+Allow: /
 
-Sitemap: /sitemap.xml
 {% endverbatim %}
