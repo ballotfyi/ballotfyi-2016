@@ -392,6 +392,28 @@ ul {
         -webkit-filter: none;
         filter: none; }
 
+.partner-logo {
+  margin-top: 30px; }
+  .partner-logo:hover, .partner-logo:focus {
+    transform: translate(0, -2px);
+    -webkit-transform: translate(0, -2px);
+    -ms-transform: translate(0, -2px); }
+    .partner-logo:active {
+      transform: translate(0, 5px);
+      -webkit-transform: translate(0, 5px);
+      -ms-transform: translate(0, 5px); }
+      .partner-logo img {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        width: 50%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; }
+        .partner-logo img:hover, .partner-logo img:focus {
+          -webkit-filter: none;
+          filter: none; }
+
 .follow-img, .share-img {
   margin-top: 60px; }
   .follow-img img, .share-img img {
