@@ -88,13 +88,11 @@
 	"buffers":
 	[
 		{
-			"contents": "{\n\t\"folders\":\n\t[\n\t\t{\n\t\t\t\"path\": \"/Users/jimmy/Documents/side projects/web/ballotfyi\"\n\t\t}\n\t]\n}\n",
-			"file": "pages/ballotfyi.sublime-project",
-			"file_size": 94,
-			"file_write_time": 131206203310000000,
+			"file": "templates/base.html",
 			"settings":
 			{
-				"buffer_size": 94,
+				"buffer_size": 6192,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -106,10 +104,42 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 207.0,
+		"height": 392.0,
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"uninst",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"schema",
+				"SublimeLinter: Choose Mark Style"
+			],
+			[
+				"schem",
+				"Validate Schema"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"struc",
+				"Set Syntax: reStructuredText"
+			],
 			[
 				"mark",
 				"Set Syntax: Markdown"
@@ -129,14 +159,6 @@
 			[
 				"mel",
 				"Set Syntax: MEL"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"instl",
@@ -178,11 +200,37 @@
 	[
 		"/Users/jimmy/Documents/side projects/web/ballotfyi",
 		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/plugins",
 		"/Users/jimmy/Documents/side projects/web/ballotfyi/static",
-		"/Users/jimmy/Documents/side projects/web/ballotfyi/static/css"
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/static/css",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/templates"
 	],
 	"file_history":
 	[
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/53.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/52.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/51.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/63.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/55.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/56.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/59.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/58.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/57.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/62-66.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/61.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/60.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/64.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/65-67.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/about.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/terms.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/takeaction.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/general.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/error.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/robots.txt",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/templates/base.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/54.html",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/static/css/style.scss",
+		"/Users/jimmy/Documents/side projects/web/ballotfyi/pages/index.html",
 		"/Users/jimmy/Documents/side projects/web/ballotfyi/locale/README.md",
 		"/Users/jimmy/Downloads/Gruntfile.js",
 		"/Users/jimmy/Desktop/hanover-6-22",
@@ -236,7 +284,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 		]
@@ -246,6 +294,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"yet",
+			"expanding",
+			"11",
+			"disable",
+			"disable-select",
+			"user-select",
+			"disable-select",
 			" â€“ ",
 			"*",
 			"col-lg-2 col-sm-3\"",
@@ -311,27 +366,28 @@
 			[
 				{
 					"buffer": 0,
-					"file": "pages/ballotfyi.sublime-project",
-					"semi_transient": true,
+					"file": "templates/base.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 94,
+						"buffer_size": 6192,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3248,
+								2298
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.sublime-syntax"
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 316.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -342,7 +398,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 34.0
 	},
 	"input":
 	{
