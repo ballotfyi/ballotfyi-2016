@@ -544,7 +544,7 @@ $transition: all #{$speed} ease-out;
 	img {
 		-webkit-filter: grayscale(100%);
 		filter: grayscale(100%);
-		width: 50%;
+		width: 40%;
 		height:auto;
 		display:block;
 		margin-left: auto;
@@ -554,6 +554,23 @@ $transition: all #{$speed} ease-out;
 			-webkit-filter: none;
 			filter: none;
 		}
+	}
+}
+
+.partner-logo-caption {
+	padding-top: 10px;
+	font-family: Georgia;
+	font-size: 9pt;
+	line-height: 13pt;
+	color: #000;
+
+
+	text-align: center;
+}
+
+#voter-logo {
+	img {
+		width: 70%;
 	}
 }
 
