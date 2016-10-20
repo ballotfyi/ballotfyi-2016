@@ -91,11 +91,11 @@ function addFontClass( query, classToAdd ) {
 }
 
 
-if ('addEventListener' in document) {
-  document.addEventListener('DOMContentLoaded', function() {
-      FastClick.attach(document.body);
-  }, false);
-}
+// if ('addEventListener' in document) {
+//   document.addEventListener('DOMContentLoaded', function() {
+//       FastClick.attach(document.body);
+//   }, false);
+// }
 
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
