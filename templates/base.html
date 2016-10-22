@@ -4,13 +4,14 @@
 	{% block header %}
 	<title>{% block title %}California State Propositions – summarized and explained{% endblock title %}</title>
 	{% endblock header %}
+	<link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
 	<!-- Hello! Thanks for taking a peek under the covers. Please make sure you're registered to vote. -->
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="https://s3.amazonaws.com/ballot.fyi/static/img/share-fb-2.png" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="fb:app_id" content="1134187086655814" />
 	{% block fbtags %}
-	<meta property="og:url" content="http://ballot.fyi" />
+	<meta property="og:url" content="https://ballot.fyi" />
 	<meta property="og:title" content="California's State Propositions - for busy people, a nonpartisan guide" />
 	<meta property="og:description" content="Weed, plastic bags, guns, condoms  – it's up to you. This is the quickest non-partisan guide to California's state propositions." />
 	<meta name="twitter:card" content="summary" />
@@ -25,7 +26,6 @@
 	{% block meta-description %}<meta name="description" content="A non-partisan guide to all of the California State Ballot Propositions. Simplified and unbiased.">{% endblock meta-description %}
 	<meta name="keywords" content="California state propositions, voter guide, nonpartisan, simplified, explained">
 	<meta name="author" content="Citizen & Citizens">
-	<link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
 	<link rel="shortcut icon" href="{% static '/img/favicon.ico' %}">
 	<meta http-equiv="max-age" content="86400" />
 	<link rel="apple-touch-icon-precomposed" href="{% static '/img/apple-touch-icon-precomposed.png' %}"><!-- 57×57px -->
