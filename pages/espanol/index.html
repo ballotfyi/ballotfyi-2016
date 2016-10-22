@@ -1,10 +1,10 @@
-imgpath: ../../static/img/index
+imgpath: ../../../static/img/index
 indexpath: .
-espanolpath: ../espanol/
+englishpath: ..
 
-<!-- INDEX -->
+<!-- INDEX ESPANOL-->
 
-{% extends "base.html" %}
+{% extends "base-es.html" %}
 {% block content %}
 
 
@@ -13,24 +13,26 @@ espanolpath: ../espanol/
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-4 col-md-offset-1 col-md-5 col-xs-offset-0 col-xs-12">
-				<h1>The quickest nonpartisan voter guide you'll find –<br>Get educated about California's state propositions</h1>
+				<h1>El más rápido imparcial guía para votar que encontraras – edúcate sobre de las proposiciones del estado de California</h1>
 			</div>
 			<div class="col-lg-4 col-md-5 col-xs-offset-0 col-xs-12">
-				<div class="index-intro-small">We're tired of Donald v Hillary coverage. There are other very important issues at stake. State propositions that affect you – like weed, plastic bags, and porn – are up for vote. So it turns out your California vote is important <a href="" class="acronym" data-expanded='as f***' id='af'>AF</a>.<br><br>We know you're busy, and we don't expect you to read all this in one go, so <a href="https://tinyletter.com/ballotfyi">subscribe</a> to our digest or <a target="_blank" href="https://www.instagram.com/ballotfyi/">follow</a> on Instagram. We're here to give you everything you'll need on the California state propositions. Quickly and objectively, so you can vote smarter and harder.</div>
+				<div class="index-intro-small">Estamos cansados ​​de la cobertura de Donald v Hillary. Hay otras cuestiones muy importantes que están en juego. Hay propuestas estatales que te afectarán - como la mala hierba, educación bilingue, y el porno – y estan al voto. Osea resulta que tu voto es importante aqui en California wei.<br><br>Sabemos que estás ocupado, y no esperamos que leas todo esto de una vez, asi que <a href="https://tinyletter.com/ballotfyi">suscribete</a> o <a target="_blank" href="https://www.instagram.com/ballotfyi/">síguenos</a> en Instagram. Estamos aquí para darte todo lo que necesitas para informarte de las propuestas del estado de California. Rápida y objetivamente, para que puedas votar más inteligente y con ganas.</div>
 				<div id="props"></div>
 			</div>
 		</div>
 	</div>
 </div>
+
+
 <!-- PROP 60 -->
 <div class="index-prop-section p60-color">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/60">
-				<div class="index-prop-title">Prop 60 requires pornstars to wear condoms (during sex)</div>
+				<div class="index-prop-title">PROP 60 Requiere que los pornostars usen condones (durante sexo)</div>
 				<div class="index-prop-img"><img class="" src="{{imgpath}}/banana.png"></div>
-				<div class="index-prop-subtitle">Seems like a good idea, so why are many against it?</div>
+				<div class="index-prop-subtitle">Parece una buena idea, ¿por qué dicen que no?</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">60</div>
@@ -39,15 +41,34 @@ espanolpath: ../espanol/
 		</div>
 	</div>
 </div>
+
+<!-- PROP 58 -->
+<div class="index-prop-section p58-color">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
+				<a href="{{indexpath}}/58">
+				<div class="index-prop-title">PROP 58 DA CONTROL LOCAL SOBRE COMO EDUCAR A LOS ESTUDIANTES DE INGLÉS</div>
+				<div class="index-prop-img"><img class="" src="{{imgpath}}/rosetta.png"></div>
+				<div class="index-prop-subtitle">1,4 millones de estudiantes (1 de cada 5) no hablan Inglés. ¿Cómo deben aprender y no quedarse con cara de what?</div>
+				<div class="index-rectangle"></div>
+				</a>
+				<div class="index-prop-num">58</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
 <!-- PROP 62 & 66 -->
 <div class="index-prop-section p62-color">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 			<a href="{{indexpath}}/62-66">
-				<div class="index-prop-title">prop 62 & 66 either repeals or speeds up the death penalty</div>
+				<div class="index-prop-title">PROP 62 &amp; 66 REVOCA O ACELERA LA PENA DE MUERTE</div>
 				<div class="index-prop-img"><img class="" src="{{imgpath}}/syringe.png"></div>
-				<div class="index-prop-subtitle">If both pass, the one with the most votes determines the future of the death penalty.</div>
+				<div class="index-prop-subtitle">Si ambos pasan, el que tiene la mayoría de votos determina el futuro de la pena de muerte.</div>
 			<div class="index-rectangle"></div>
 			</a>
 			<div class="index-prop-num">62 &amp 66</div>
@@ -62,9 +83,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/64">
-				<div class="index-prop-title">prop 64 legalizes mar!juana</div>
+				<div class="index-prop-title">PROP 64 LEGALIZA MAR!JUANA</div>
 				<div class="index-prop-img"><img class="" src="{{imgpath}}/marijuana-leaf.png"></div>
-				<div class="index-prop-subtitle">If this passes, guess how many plants you'd be allowed to grow at home.</div>
+				<div class="index-prop-subtitle">Si esto pasa, adivina cuántas plantas te permitirán crecer en casa.</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">64</div>
@@ -79,9 +100,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/51">
-				<div class="index-prop-title">Prop 51 makes $9B to build and improve schools</div>
+				<div class="index-prop-title">PROP 51 PONE $9B PARA CONSTRUIR Y MEJORAR LAS ESCUELAS</div>
 				<div class="index-prop-img"><img class="index-make-smaller" src="{{imgpath}}/schoolbus.png"></div>
-				<div class="index-prop-subtitle">Fiscally, the biggest measure on the ballot. $9B + $8B interest = $17,000,000,000 total.</div>
+				<div class="index-prop-subtitle">Fiscalmente, la medida mas grande en la boleta. $9B + $8B interés = $ 17, 000,000,000 en total.</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">51</div>
@@ -96,9 +117,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/63">
-				<div class="index-prop-title">Prop 63 creates stricter laws around ammunition</div>
+				<div class="index-prop-title">PROP 63 PROHÍBE POSEER ARMAS PESADAS</div>
 				<div class="index-prop-img"><img class="" src="{{imgpath}}/arnold.png"></div>
-				<div class="index-prop-subtitle">New license to buy ammo, instant background checks, and no online shipping.</div>
+				<div class="index-prop-subtitle">Requiere antecedentes inmediatos y leyes más estrictas sobre municiones.</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">63</div>
@@ -113,9 +134,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/55">
-				<div class="index-prop-title">Prop 55 extends an income tax for high income earners</div>
+				<div class="index-prop-title">PROP 55 EXTIENDE IMPUESTO SOBRE LA RENTA PARA PERSONAS CON ALTOS INGRESOS</div>
 				<div class="index-prop-img"><img class='index-make-smaller' src="{{imgpath}}/monopoly-car.png"></div>
-				<div class="index-prop-subtitle">Do you know what tax bracket you fall under?</div>
+				<div class="index-prop-subtitle">¿Sabes donde estas en los niveles de impuestos?</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">55</div>
@@ -130,9 +151,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/54">
-				<div class="index-prop-title">Prop 54 requires that before voting, bills be frozen and made public</div>
+				<div class="index-prop-title">PROP 54 REQUIERE QUE ANTES DE VOTAR, LAS LEYES SE HAGAN PUBLICAS EN EL INTERNET</div>
 				<div class="index-prop-img"><img class='index-make-smaller'src="{{imgpath}}/mac.png"></div>
-				<div class="index-prop-subtitle">Seems simple, but those against it say it'll open it up for lobbyists.</div>
+				<div class="index-prop-subtitle">Osea. porque 2016 no?</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">54</div>
@@ -147,9 +168,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/56">
-				<div class="index-prop-title">Prop 56 increases the tobacco tax by $2</div>
+				<div class="index-prop-title">PROP 56 INCREMENTA el impuesto al tabaco en $ 2</div>
 				<div class="index-prop-img"><img class="" src="{{imgpath}}/cigarettes.png"></div>
-				<div class="index-prop-subtitle">This will also loop in the currently untaxed e-cigarettes.</div>
+				<div class="index-prop-subtitle">Esto también incluye a los e-cigarrillos que actualmente estan libres de impuestos y sin madre.</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">56</div>
@@ -164,9 +185,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/65-67">
-				<div class="index-prop-title">prop 67 &amp; 65 bans plastic bags statewide and redirects the 10 cents</div>
+				<div class="index-prop-title">prop 67 &amp; 65 prohíbe las bolsas de plástico en todo el estado y redirige los 10 centavos</div>
 				<div class="index-prop-img"><img class="" src="{{imgpath}}/plastic-bag.png"></div>
-				<div class="index-prop-subtitle">There's 5 possible scenarios. The plastic bag industry wants all but one.</div>
+				<div class="index-prop-subtitle">Hay 5 escenarios posibles. La industria de la bolsa de plástico quiere todos menos uno.</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">67 &amp; 65</div>
@@ -181,9 +202,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/53">
-				<div class="index-prop-title">Prop 53 requires state infrastructure projects over $2B to be voter approved</div>
+				<div class="index-prop-title">PROP 53 REQUIERE QUE LOS PROYECTOS DE INFRAESTRUCTURA ESTATALES DE MÁS DE $ 2B SEAN APROBADOS POR UN VOTO</div>
 				<div class="index-prop-img"><img class="index-make-smaller" src="{{imgpath}}/checkbook.png"></div>
-				<div class="index-prop-subtitle">This could put a stop to the SF to LA Bullet Train.</div>
+				<div class="index-prop-subtitle">Esto podría poner fin al tren bala entre LA y SF</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">53</div>
@@ -199,9 +220,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/57">
-				<div class="index-prop-title">Prop 57 makes it easier for nonviolent offenders to get parole</div>
+				<div class="index-prop-title">PROP 57 HACE MAS FACIL OBTENER LA LIBERTAD CONDICIONAL PARA LOS DELINCUENTES NO VIOLENTOS</div>
 				<div class="index-prop-img"><img class="" src="{{imgpath}}/hamburglar.png"></div>
-				<div class="index-prop-subtitle">It's a thin line between violent and non-violent (and the Hamburglar straddles it)</div>
+				<div class="index-prop-subtitle">Es una línea muy fina entre violencia y no violencia (preguntenle al Hamburglar)</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">57</div>
@@ -217,30 +238,12 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/52">
-				<div class="index-prop-title">Prop 52 continues a mechanism that makes money for hospitals</div>
+				<div class="index-prop-title">PROP 52 CONTINUA UN MECANISMO QUE HACE DINERO PARA LOS HOSPITALES</div>
 				<div class="index-prop-img"><img class="index-make-smaller" src="{{imgpath}}/ambulance.png"></div>
-				<div class="index-prop-subtitle">Hospitals make over $3 billion by doing this.</div>
+				<div class="index-prop-subtitle">De alguna manera, los hospitales hacen más de $ 3 mil millones haciendo esto</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">52</div>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- PROP 58 -->
-<div class="index-prop-section p58-color">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
-				<a href="{{indexpath}}/58">
-				<div class="index-prop-title">Prop 58 gives local control on how to teach English-learners</div>
-				<div class="index-prop-img"><img class="" src="{{imgpath}}/rosetta.png"></div>
-				<div class="index-prop-subtitle">1.4 million students (1 in 5) aren't fluent in English. How should they learn English?</div>
-				<div class="index-rectangle"></div>
-				</a>
-				<div class="index-prop-num">58</div>
 
 			</div>
 		</div>
@@ -253,9 +256,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/61">
-				<div class="index-prop-title">Prop 61 might lower drug prices for state agencies</div>
+				<div class="index-prop-title">PROP 61 podría reducir los precios de medicamentos para las agencias estatales</div>
 				<div class="index-prop-img"><img class="index-make-smaller" src="{{imgpath}}/bottles.png"></div>
-				<div class="index-prop-subtitle">This prop has the most campaign spending in CA history.</div>
+				<div class="index-prop-subtitle">Esta prop tiene la campaña mas cara en la historia de CA</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">61</div>
@@ -270,9 +273,9 @@ espanolpath: ../espanol/
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
 				<a href="{{indexpath}}/59">
-				<div class="index-prop-title">Prop 59 tells the state government what you think about Citizens United</div>
+				<div class="index-prop-title">PROP 59 LE DICE AL GOBIERNO ESTADO QUE PIENSAS SOBRE DE CIUDADANOS DE LOS ESTADOS</div>
 				<div class="index-prop-img"><img class="index-make-smaller" src="{{imgpath}}/corporation.png"></div>
-				<div class="index-prop-subtitle">Pass or fail, this measure literally has no legal impact.</div>
+				<div class="index-prop-subtitle">Solo quieren saber como te sientes, esta prop no tiene ningun impacto legal.</div>
 				<div class="index-rectangle"></div>
 				</a>
 				<div class="index-prop-num">59</div>
@@ -281,7 +284,7 @@ espanolpath: ../espanol/
 	</div>
 </div>
 <!-- PROP 59 -->
-<div class="index-prop-section general-color">
+<!-- <div class="index-prop-section general-color">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-offset-0 col-xs-12">
@@ -294,6 +297,6 @@ espanolpath: ../espanol/
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 {% endblock content%}

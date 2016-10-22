@@ -984,6 +984,26 @@ sup {
 	float: right;
 }
 
+.international-menu {
+	position: absolute;
+	padding: 4px;
+	top: 70px;
+	right: 60px;
+	z-index: 100;
+	// border: 3px solid #333;
+	color: white;
+	background-color: rgb(255,126,44);
+	@include helvetica-font;
+	font-weight: bold;
+	font-size: 10pt;
+
+
+
+	@include breakpoint("xsmall") {
+		right: 25px;
+	}
+}
+
 /* colors */
 
 /*

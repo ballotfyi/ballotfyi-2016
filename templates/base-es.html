@@ -2,28 +2,28 @@
 <html>
 <head>
 	{% block header %}
-	<title>{% block title %}California State Propositions – summarized and explained{% endblock title %}</title>
+	<title>{% block title %}Las propuestas del estado de California - La más rápida imparcial guía para votar{% endblock title %}</title>
 	{% endblock header %}
 	<!-- Hello! Thanks for taking a peek under the covers. Please make sure you're registered to vote. -->
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="https://s3.amazonaws.com/ballot.fyi/static/img/share-fb-2.png" />
-	<meta property="og:locale" content="en_US" />
+	<meta property="og:locale" content="es_ES" />
 	<meta property="fb:app_id" content="1134187086655814" />
 	{% block fbtags %}
 	<meta property="og:url" content="http://ballot.fyi" />
-	<meta property="og:title" content="California's State Propositions - for busy people, a nonpartisan guide" />
-	<meta property="og:description" content="Weed, plastic bags, guns, condoms  – it's up to you. This is the quickest non-partisan guide to California's state propositions." />
+	<meta property="og:title" content="Las propuestas del estado de California - La más rápida imparcial guía para votar"/>
+	<meta property="og:description" content="Hay propuestas estatales que te afectarán - como la mala hierba, bolsas de plástico, y el porno – y estan al voto" />
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@ballotfyi" />
-	<meta name="twitter:title" content="California state propositions for busy people" />
-	<meta name="twitter:description" content="Weed, plastic bags, guns, condoms  – it's up to you. This is the quickest non-partisan guide to California's state propositions." />
+	<meta name="twitter:title" content="Las propuestas del estado de California - La más rápida imparcial guía para votar" />
+	<meta name="twitter:description" content="Hay propuestas estatales que te afectarán - como la mala hierba, bolsas de plástico, y el porno – y estan al voto" />
 	<meta name="twitter:image" content="https://s3.amazonaws.com/ballot.fyi/static/img/share-twit.png" />	
 	{% endblock fbtags %}
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	{% block meta-description %}<meta name="description" content="A non-partisan guide to all of the California State Ballot Propositions. Simplified and unbiased.">{% endblock meta-description %}
-	<meta name="keywords" content="California state propositions, voter guide, nonpartisan, simplified, explained">
+	{% block meta-description %}<meta name="description" content="La más rápida imparcial guía para votar para las propuestas del estado de California | Elección 2016">{% endblock meta-description %}
+	<meta name="keywords" content="las propuestas del estado de California, propuesta, propisiticiones, imparcial, guía del voltante, simplificado, resumen, rápida">
 	<meta name="author" content="Citizen & Citizens">
 	<link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
 	<link rel="shortcut icon" href="{% static '/img/favicon.ico' %}">
@@ -36,8 +36,8 @@
 	  "@context": "http://schema.org",
 	  "@type": "WebSite",
 	  "name": "ballot.fyi",
-	  "headline":"California State Propositions for Busy People - Summarized and Explained",
-	  "description":"The quickest, nonpartisan voter guide.",
+	  "headline":"Las propuestas del estado de California - El más rápido imparcial guía para votar",
+	  "description":"La más rápida imparcial guía para votar para las propuestas del estado de California",
 	  "author":{
 	    "@type": "Organization",
 	    "name": "Citizen & Citizens",
@@ -50,13 +50,13 @@
 	    "URL": "https://s3.amazonaws.com/ballot.fyi/static/img/share-twit.png",
 	    "representativeOfPage": "true"
 	  },
-	  "url": "https://ballot.fyi",
+	  "url": "http://ballot.fyi",
 	  "sameAs": [
 	    "https://www.facebook.com/ballotfyi/",
 	    "https://instagram.com/ballotfyi/"
 	  ],
 	  "copyrightYear":"2016",
-	  "keywords":"California state propositions, simplified, summary, quick, nonpartisan, unbiased, simple, explained"
+	  "keywords":"las propuestas del estado de California, guia, imparcial, simplificado, resumen, rápido"
 
 	}
 	</script>
@@ -89,36 +89,30 @@
 	    </div>
 		<div class="collapse navbar-collapse needsclick" id="nav">
 	      <ul class="nav navbar-nav navbar-right needsclick">
-	        <li class="header-button"><a href="{{indexpath}}#props">the issues</a></li>
-	        <li class="header-button"><a href="{{indexpath}}/about">about</a></li>
-	        <li class="header-button"><a href="{{indexpath}}/takeaction">do something</a></li>
+	        <li class="header-button"><a href="{{indexpath}}#props">Los temas</a></li>
+	        <li class="header-button"><a href="{{indexpath}}/quienes">Quiénes somos</a></li>
+	        <li class="header-button"><a href="{{indexpath}}/hazalgo">Haz algo</a></li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>	
-	<a href="{{espanolpath}}"><div class="international-menu">¡ahora en español!</div></a>
+	<a href="{{englishpath}}"><div class="international-menu">Switch to boring english</div></a>
 	{% block content %}
 	{% endblock content %}
 	<div class="line-division"></div>
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="footer-insta col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-0 col-xs-12">
-					<h2>Stay up to date on these issues: follow us on <a target="_blank" href="https://www.instagram.com/ballotfyi/">Instagram</a></h2>
-				</div>
-			</div>
-			<div class="row">
 				<div class="social">
 				<div class="fb-like" data-href="http://ballot.fyi" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
 				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://ballot.fyi/" data-lang="en" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 				</div>
 
-				<div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">Site designed &amp; built by <a href="{{indexpath}}/about#citzens">Citizen &amp; Citizens </a> &copy; 2016 </a> 🇺🇸<br> 
-				Until Nov. 8, the site will be constantly updated.<br>Refresh your browser to see the latest version.<br>
-				<a href="{{indexpath}}/terms">terms of service</a> • 
-				<a href="{{indexpath}}/about">about</a> • 
+				<div class="col-lg-offset-3 col-lg-6 col-sm-offset-2 col-sm-8 col-xs-offset-1 col-xs-10">Sitio web hecho por <a href="{{indexpath}}/quienes#citzens">Citizen &amp; Citizens </a> &copy; 2016 </a> 🇺🇸<br> 
+				<a href="{{indexpath}}/terms">términos de servicio</a> • 
+				<a href="{{indexpath}}/quienes">Quiénes somos</a> • 
 				<a href="https://www.instagram.com/ballotfyi/">instagram</a> • 
-				<a href="{{indexpath}}/takeaction">do something</a>
+				<a href="{{indexpath}}/hazalgo">Haz algo</a>
 				</div>
 			</div>
 		</div>
