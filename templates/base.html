@@ -5,6 +5,7 @@
 	<title>{% block title %}California State Propositions – summarized and explained{% endblock title %}</title>
 	{% endblock header %}
 	<!-- Hello! Thanks for taking a peek under the covers. Please make sure you're registered to vote. -->
+	<link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image" content="https://s3.amazonaws.com/ballot.fyi/static/img/share-fb-2.png" />
 	<meta property="og:locale" content="en_US" />
@@ -25,7 +26,7 @@
 	{% block meta-description %}<meta name="description" content="A non-partisan guide to all of the California State Ballot Propositions. Simplified and unbiased.">{% endblock meta-description %}
 	<meta name="keywords" content="California state propositions, voter guide, nonpartisan, simplified, explained">
 	<meta name="author" content="Citizen & Citizens">
-	<link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
+	<!-- <link rel="canonical" href="http://ballot.fyi" /> -->
 	<link rel="shortcut icon" href="{% static '/img/favicon.ico' %}">
 	<meta http-equiv="max-age" content="86400" />
 	<link rel="apple-touch-icon-precomposed" href="{% static '/img/apple-touch-icon-precomposed.png' %}"><!-- 57×57px -->
