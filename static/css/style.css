@@ -816,127 +816,140 @@ ul {
 
   .international-menu {
     position: absolute;
-    top: 100px;
-    right: 30px; }
+    padding: 4px;
+    top: 70px;
+    right: 60px;
+    z-index: 100;
+    color: white;
+    background-color: #ff7e2c;
+    font-family: 'Helvetica Neue', Helvetica, 'Helvetica-bd', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    font-weight: bold;
+    font-size: 10pt; }
+    @media (max-width: 767px) {
+      .international-menu {
+        right: 25px;   }
+}
 
-    .p60-color, .p65-color, .p67-color {
-      background: #ffb558;
-      background: -webkit-linear-gradient(left, #ffb558, #ff7e2c);
-      background: -o-linear-gradient(right, #ffb558, #ff7e2c);
-      background: -moz-linear-gradient(right, #ffb558, #ff7e2c);
-      background: linear-gradient(to right, #ffb558, #ff7e2c); }
+.p60-color, .p65-color, .p67-color {
+  background: #ffb558;
+  background: -webkit-linear-gradient(left, #ffb558, #ff7e2c);
+  background: -o-linear-gradient(right, #ffb558, #ff7e2c);
+  background: -moz-linear-gradient(right, #ffb558, #ff7e2c);
+  background: linear-gradient(to right, #ffb558, #ff7e2c); }
 
-      .p56-color, .p61-color, .p64-color {
-        background: #ffd988;
-        background: -webkit-linear-gradient(left, #ffd988, #ffb250);
-        background: -o-linear-gradient(right, #ffd988, #ffb250);
-        background: -moz-linear-gradient(right, #ffd988, #ffb250);
-        background: linear-gradient(to right, #ffd988, #ffb250); }
+  .p56-color, .p61-color, .p64-color {
+    background: #ffd988;
+    background: -webkit-linear-gradient(left, #ffd988, #ffb250);
+    background: -o-linear-gradient(right, #ffd988, #ffb250);
+    background: -moz-linear-gradient(right, #ffd988, #ffb250);
+    background: linear-gradient(to right, #ffd988, #ffb250); }
 
-        .p51-color, .p55-color {
-          background: #ff43ae;
-          background: -webkit-linear-gradient(left, #ff43ae, #ff2076);
-          background: -o-linear-gradient(right, #ff43ae, #ff2076);
-          background: -moz-linear-gradient(right, #ff43ae, #ff2076);
-          background: linear-gradient(to right, #ff43ae, #ff2076); }
+    .p51-color, .p55-color {
+      background: #ff43ae;
+      background: -webkit-linear-gradient(left, #ff43ae, #ff2076);
+      background: -o-linear-gradient(right, #ff43ae, #ff2076);
+      background: -moz-linear-gradient(right, #ff43ae, #ff2076);
+      background: linear-gradient(to right, #ff43ae, #ff2076); }
 
-          .p52-color, .p53-color, .p54-color, .p58-color, .p59-color {
-            background: #e664f3;
-            background: -webkit-linear-gradient(left, #e664f3, #c834e3);
-            background: -o-linear-gradient(right, #e664f3, #c834e3);
-            background: -moz-linear-gradient(right, #e664f3, #c834e3);
-            background: linear-gradient(to right, #e664f3, #c834e3); }
+      .p52-color, .p53-color, .p54-color, .p58-color, .p59-color {
+        background: #e664f3;
+        background: -webkit-linear-gradient(left, #e664f3, #c834e3);
+        background: -o-linear-gradient(right, #e664f3, #c834e3);
+        background: -moz-linear-gradient(right, #e664f3, #c834e3);
+        background: linear-gradient(to right, #e664f3, #c834e3); }
 
-            .p57-color, .p66-color, .p62-color, .p63-color {
-              background: #bfe4ff;
-              background: -webkit-linear-gradient(left, #bfe4ff, #8bc5ff);
-              background: -o-linear-gradient(right, #bfe4ff, #8bc5ff);
-              background: -moz-linear-gradient(right, #bfe4ff, #8bc5ff);
-              background: linear-gradient(to right, #bfe4ff, #8bc5ff); }
+        .p57-color, .p66-color, .p62-color, .p63-color {
+          background: #bfe4ff;
+          background: -webkit-linear-gradient(left, #bfe4ff, #8bc5ff);
+          background: -o-linear-gradient(right, #bfe4ff, #8bc5ff);
+          background: -moz-linear-gradient(right, #bfe4ff, #8bc5ff);
+          background: linear-gradient(to right, #bfe4ff, #8bc5ff); }
 
-              .general-color {
-                background: #828282;
-                background: -webkit-linear-gradient(left, #828282, #5a5a5a);
-                background: -o-linear-gradient(right, #828282, #5a5a5a);
-                background: -moz-linear-gradient(right, #828282, #5a5a5a);
-                background: linear-gradient(to right, #828282, #5a5a5a); }
+          .general-color {
+            background: #828282;
+            background: -webkit-linear-gradient(left, #828282, #5a5a5a);
+            background: -o-linear-gradient(right, #828282, #5a5a5a);
+            background: -moz-linear-gradient(right, #828282, #5a5a5a);
+            background: linear-gradient(to right, #828282, #5a5a5a); }
 
-                .p60-comp-color, .p65-comp-color, .p67-comp-color {
-                  color: #ff7e2c; }
+            .p60-comp-color, .p65-comp-color, .p67-comp-color {
+              color: #ff7e2c; }
 
-                  .p56-comp-color, .p61-comp-color, .p64-comp-color {
-                    color: #ffb250; }
+              .p56-comp-color, .p61-comp-color, .p64-comp-color {
+                color: #ffb250; }
 
-                    .p51-comp-color, .p55-comp-color {
-                      color: #ff2076; }
+                .p51-comp-color, .p55-comp-color {
+                  color: #ff2076; }
 
-                      .p52-comp-color, .p53-comp-color, .p54-comp-color, .p58-comp-color, .p59-comp-color {
-                        color: #c834e3; }
+                  .p52-comp-color, .p53-comp-color, .p54-comp-color, .p58-comp-color, .p59-comp-color {
+                    color: #c834e3; }
 
-                        .p57-comp-color, .p66-comp-color, .p62-comp-color, .p63-comp-color {
-                          color: #8bc5ff; }
+                    .p57-comp-color, .p66-comp-color, .p62-comp-color, .p63-comp-color {
+                      color: #8bc5ff; }
 
-                          .p51-img {
-                            background-image: url(../img/index/schoolbus.png); }
+                      .p51-img {
+                        background-image: url(../img/index/schoolbus.png); }
 
-                            .p52-img {
-                              background-image: url(../img/index/ambulance.png); }
+                        .p52-img {
+                          background-image: url(../img/index/ambulance.png); }
 
-                              .p53-img {
-                                background-image: url(../img/index/checkbook.png); }
+                          .p53-img {
+                            background-image: url(../img/index/checkbook.png); }
 
-                                .p54-img {
-                                  background-image: url(../img/index/mac.png); }
+                            .p54-img {
+                              background-image: url(../img/index/mac.png); }
 
-                                  .p55-img {
-                                    background-image: url(../img/index/monopoly-car.png); }
+                              .p55-img {
+                                background-image: url(../img/index/monopoly-car.png); }
 
-                                    .p56-img {
-                                      background-image: url(../img/index/cigarettes.png); }
+                                .p56-img {
+                                  background-image: url(../img/index/cigarettes.png); }
 
-                                      .p57-img {
-                                        background-image: url(../img/index/hamburglar.png); }
+                                  .p57-img {
+                                    background-image: url(../img/index/hamburglar.png); }
 
-                                        .p58-img {
-                                          background-image: url(../img/index/rosetta.png); }
+                                    .p58-img {
+                                      background-image: url(../img/index/rosetta.png); }
 
-                                          .p59-img {
-                                            background-image: url(../img/index/corporation.png); }
+                                      .p59-img {
+                                        background-image: url(../img/index/corporation.png); }
 
-                                            .p60-img {
-                                              background-image: url(../img/index/banana.png); }
+                                        .p60-img {
+                                          background-image: url(../img/index/banana.png); }
 
-                                              .p61-img {
-                                                background-image: url(../img/index/bottles.png); }
+                                          .p61-img {
+                                            background-image: url(../img/index/bottles.png); }
 
-                                                .p62-img {
-                                                  background-image: url(../img/index/syringe.png); }
+                                            .p62-img {
+                                              background-image: url(../img/index/syringe.png); }
 
-                                                  .p63-img {
-                                                    background-image: url(../img/index/arnold.png); }
+                                              .p63-img {
+                                                background-image: url(../img/index/arnold.png); }
 
-                                                    .p64-img {
-                                                      background-image: url(../img/index/marijuana-leaf.png); }
+                                                .p64-img {
+                                                  background-image: url(../img/index/marijuana-leaf.png); }
 
-                                                      .p65-img {
-                                                        background-image: url(../img/index/polar-bear.png); }
+                                                  .p65-img {
+                                                    background-image: url(../img/index/polar-bear.png); }
 
-                                                        .p67-img {
-                                                          background-image: url(../img/index/plastic-bag.png); }
+                                                    .p67-img {
+                                                      background-image: url(../img/index/plastic-bag.png); }
 
-                                                          section {
-                                                            font-family: 'Helvetica Neue', Helvetica, 'Helvetica-bd', sans-serif;
-                                                            font-weight: bold;
-                                                            color: #fff;
-                                                            font-size: 13pt;
-                                                            font-weight: normal;
-                                                            max-width: 355px;
-                                                            margin: 40px auto; }
-                                                            section div {
-                                                              max-width: 255px;
-                                                              word-wrap: break-word;
-                                                              margin-bottom: 10px;
-                                                              line-height: 22px; }
+                                                      section {
+                                                        font-family: 'Helvetica Neue', Helvetica, 'Helvetica-bd', sans-serif;
+                                                        font-weight: bold;
+                                                        color: #fff;
+                                                        font-size: 13pt;
+                                                        font-weight: normal;
+                                                        max-width: 355px;
+                                                        margin: 40px auto; }
+                                                        section div {
+                                                          max-width: 255px;
+                                                          word-wrap: break-word;
+                                                          margin-bottom: 10px;
+                                                          line-height: 22px; }
 
 .clear {
   clear: both; }
