@@ -1,3 +1,9 @@
+$(function() {
+  scrollToAnchor();
+  expandAcronym();
+  collapseNavOnScroll();
+  registerSortButtons();
+});
 
 function scrollToAnchor() {
   $('a[href*="#"]:not([href="#"])').click(function() {
@@ -46,13 +52,6 @@ function collapseNavOnScroll() {
 collapseNavOnScroll.openingPos = 0;
 
 
-
-$(function() {
-  scrollToAnchor();
-  expandAcronym();
-  collapseNavOnScroll();
-});
-
 var ITC_XLtCn = new FontFaceObserver('ITCAvantGardeStd-XLtCn');
 var ITC_Bld = new FontFaceObserver('ITCAvantGardeStd-Bold');
 var ITC_Bk = new FontFaceObserver('ITCAvantGardeStd-Bk');
@@ -69,15 +68,12 @@ ITC_Bld.load().then(function () {
   addFontClass('.prop-subtitle',' bold-type-loaded');
   addFontClass('.index-prop-title',' bold-type-loaded');
   addFontClass('h2',' bold-type-loaded');
+  addFontClass('.sort-btn',' bold-type-loaded');
 });
 ITC_Bk.load().then(function () {
   addFontClass('.header-button a','book-type-loaded');
   addFontClass('.prop-title-summary',' book-type-loaded');
 });
-// HelvBld.load().then(function () {
-//   addFontClass('.prop-num','helvetica-loaded');
-//   addFontClass('.index-prop-num','helvetica-loaded');
-// });
 
 
 function addFontClass( query, classToAdd ) {
@@ -88,6 +84,30 @@ function addFontClass( query, classToAdd ) {
       sel[i].className += classToAdd;
     }
   }
+}
+
+function registerSortButtons () {
+  $('#sortByNumBtn').on('click', function () {
+    var propsByNumber = $("#sort-container > .index-prop-section").sort(function (a, b) {
+        return $(a).data("sortnum") - $(b).data("sortnum");
+    });
+    $("#sort-container").html(propsByNumber);
+  });
+
+  $('#sortByInterestingBtn').on('click', function () {
+    var propsByNumber = $("#sort-container > .index-prop-section").sort(function (a, b) {
+        return $(a).data("sortint") - $(b).data("sortint");
+    });
+    $("#sort-container").html(propsByNumber);
+  });
+  $('#sortByNastyBtn').on('click', function () {
+    var propsByNumber = $("#sort-container > .index-prop-section").sort(function (a, b) {
+        return $(a).data("sortnasty") - $(b).data("sortnasty");
+    });
+    $("#sort-container").html(propsByNumber);
+  });
+
+
 }
 
 

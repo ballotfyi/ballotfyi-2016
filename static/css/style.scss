@@ -1216,6 +1216,47 @@ section {
 }
 
 
+.sort-menu {
+	position: relative;
+	top: 80px;
+}
+
+.sort-label {
+	@include sans-serif-font;
+	font-size: 12pt;
+	text-align: left;
+	padding: 2px 1px;
+	color: rgb($gray1,$gray1,$gray1);
+	@include breakpoint("xsmall") {
+		font-size: 10pt;
+	}
+
+}
+
+.sort-btn {
+	@include sans-serif-font;
+	font-size: 12pt;
+	color: #333;
+	text-align: center;
+	padding: 2px 1px;
+	border: 1px solid #999;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	cursor: pointer;
+	@include breakpoint("xsmall") {
+		font-size: 10pt;
+	}
+	@include click-animation;
+
+	&:hover, &:focus {
+		background-color: #ccc;
+	}
+
+
+}
+
+
 
 //-- color scheme
 /*
