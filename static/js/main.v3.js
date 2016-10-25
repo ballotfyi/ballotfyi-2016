@@ -3,6 +3,8 @@ $(function() {
   expandAcronym();
   collapseNavOnScroll();
   registerSortButtons();
+  var sortedBy = getParameterByName('sort');
+  if(sortedBy){sortBy(sortedBy, sortedBy)};
 });
 
 function scrollToAnchor() {
@@ -58,7 +60,10 @@ var ITC_Bk = new FontFaceObserver('ITCAvantGardeStd-Bk');
 // var HelvBld = new FontFaceObserver('Helvetica-bd');
 
 ITC_XLtCn.load().then(function () {
-  addFontClass('.index-intro-big',' bold-condensed-loaded');
+  addFontClass('.index-intro-big',' light-condensed-loaded');
+  addFontClass('.sort-btn',' light-condensed-loaded');
+  addFontClass('.sort-label',' light-condensed-loaded');
+  addFontClass('.header-button',' light-condensed-loaded');
   addFontClass('h1',' light-condensed-loaded');
 });
 ITC_Bld.load().then(function () {
@@ -67,7 +72,6 @@ ITC_Bld.load().then(function () {
   addFontClass('.prop-title',' bold-type-loaded');
   addFontClass('.prop-subtitle',' bold-type-loaded');
   addFontClass('.index-prop-title',' bold-type-loaded');
-  addFontClass('.sort-btn',' bold-type-loaded');
   addFontClass('h2',' bold-type-loaded');
 });
 ITC_Bk.load().then(function () {
@@ -87,35 +91,29 @@ function addFontClass( query, classToAdd ) {
 }
 
 function registerSortButtons () {
-  $('#sortByNumBtn').on('click', function () {
-    var propsByNumber = $("#sort-container > .index-prop-section").sort(function (a, b) {
-        return $(a).data("sortnum") - $(b).data("sortnum");
-    });
-    $("#sort-container").html(propsByNumber);
-  });
-
-  $('#sortByInterestingBtn').on('click', function () {
-    var propsByNumber = $("#sort-container > .index-prop-section").sort(function (a, b) {
-        return $(a).data("sortint") - $(b).data("sortint");
-    });
-    $("#sort-container").html(propsByNumber);
-  });
-  $('#sortByNastyBtn').on('click', function () {
-    var propsByNumber = $("#sort-container > .index-prop-section").sort(function (a, b) {
-        return $(a).data("sortnasty") - $(b).data("sortnasty");
-    });
-    $("#sort-container").html(propsByNumber);
-  });
-
-
+  $('#sortByNastyBtn').on('click', function(){ sortBy("nasty","nasty"); });
+  $('#sortByNumBtn').on('click', function(){ sortBy("num","num"); });
 }
 
+function sortBy(dataAttr, queryString) {
+    var propsOrdered = $("#sort-container > .index-prop-section").sort(function (a, b) {
+        return $(a).data(dataAttr) - $(b).data(dataAttr);
+    });
+    $("#sort-container").html(propsOrdered);
+    window.history.pushState('sort', 'Title', '?sort='+queryString);
+}
 
-// if ('addEventListener' in document) {
-//   document.addEventListener('DOMContentLoaded', function() {
-//       FastClick.attach(document.body);
-//   }, false);
-// }
+function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
 
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

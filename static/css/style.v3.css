@@ -521,10 +521,12 @@ ul {
 }
 
 .header-button > a {
-  font-family: sans-serif;
-  font-size: 12pt;
+  font-size: 10pt;
+  margin-top: 3pt;
   margin-left: 30px;
-  color: #000; }
+  color: #000;
+  text-transform: uppercase;
+  line-height: 16pt; }
   @media (max-width: 767px) {
     .header-button > a {
       color: #fff;   }
@@ -1042,35 +1044,28 @@ ul {
               top: 80px; }
 
               .sort-label {
-                font-family: Helvetica, sans-serif;
-                font-size: 18pt;
-                line-height: 23pt;
-                font-weight: bold;
-                color: #000;
                 font-size: 12pt;
                 text-align: left;
                 padding: 2px 1px;
-                color: #5a5a5a; }
+                color: #5a5a5a;
+                text-transform: uppercase; }
                 @media (max-width: 767px) {
                   .sort-label {
                     font-size: 10pt;   }
 }
 
 .sort-btn {
-  font-family: Helvetica, sans-serif;
-  font-size: 18pt;
-  line-height: 23pt;
-  font-weight: bold;
-  color: #000;
   font-size: 12pt;
   color: #333;
   text-align: center;
   padding: 2px 1px;
-  border: 1px solid #999;
+  border: 1px solid #eee;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  cursor: pointer; }
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 2px 2px 2px #aaa; }
   @media (max-width: 767px) {
     .sort-btn {
       font-size: 10pt;   }
@@ -1084,7 +1079,8 @@ ul {
         -webkit-transform: translate(0, 5px);
         -ms-transform: translate(0, 5px); }
         .sort-btn:hover, .sort-btn:focus {
-          background-color: #ccc; }
+          box-shadow: 4px 4px 4px #ccc;
+          background-color: #ff7e2c; }
 
 .ig-b- {
   display: inline-block; }
