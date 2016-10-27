@@ -1246,14 +1246,17 @@ section {
 	text-transform: uppercase;
 
 	box-shadow: 2px 2px 2px #aaa;
+	-webkit-box-shadow: 2px 2px 2px #aaa;
+	-moz-box-shadow: 2px 2px 2px #aaa;
 	@include breakpoint("xsmall") {
 		font-size: 10pt;
 	}
-	@include click-animation;
-
-	&:hover, &:focus {
-		box-shadow: 4px 4px 4px #ccc;
-		background-color: $orange-gradient-2;
+	@include breakpoint("large") {
+		@include click-animation;
+		&:hover, &:focus {
+			background-color: $orange-gradient-2;
+			box-shadow: 4px 4px 4px #ccc;
+		}
 	}
 }
 

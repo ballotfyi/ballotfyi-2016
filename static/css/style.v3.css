@@ -1065,22 +1065,26 @@ ul {
   -moz-border-radius: 3px;
   cursor: pointer;
   text-transform: uppercase;
-  box-shadow: 2px 2px 2px #aaa; }
+  box-shadow: 2px 2px 2px #aaa;
+  -webkit-box-shadow: 2px 2px 2px #aaa;
+  -moz-box-shadow: 2px 2px 2px #aaa; }
   @media (max-width: 767px) {
     .sort-btn {
       font-size: 10pt;   }
 }
-    .sort-btn:hover, .sort-btn:focus {
-      transform: translate(0, -2px);
-      -webkit-transform: translate(0, -2px);
-      -ms-transform: translate(0, -2px); }
-      .sort-btn:active {
-        transform: translate(0, 5px);
-        -webkit-transform: translate(0, 5px);
-        -ms-transform: translate(0, 5px); }
-        .sort-btn:hover, .sort-btn:focus {
-          box-shadow: 4px 4px 4px #ccc;
-          background-color: #ff7e2c; }
+    @media (min-width: 1200px) {
+      .sort-btn:hover, .sort-btn:focus {
+        transform: translate(0, -2px);
+        -webkit-transform: translate(0, -2px);
+        -ms-transform: translate(0, -2px);   }
+        .sort-btn:active {
+          transform: translate(0, 5px);
+          -webkit-transform: translate(0, 5px);
+          -ms-transform: translate(0, 5px);   }
+          .sort-btn:hover, .sort-btn:focus {
+            background-color: #ff7e2c;
+            box-shadow: 4px 4px 4px #ccc;   }
+}
 
 .ig-b- {
   display: inline-block; }

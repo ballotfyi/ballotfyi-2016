@@ -1,6 +1,7 @@
 #coding:utf-8
 from cactus.contrib.external.closure import ClosureJSOptimizer
 from cactus.contrib.external.yui import YUICSSOptimizer
+from cactus.contrib.external.yui import YUIJSOptimizer
 
 
 def preBuild(site):
@@ -18,7 +19,7 @@ def preBuild(site):
     if "js" in optimize:
         # If `js` was found in the `optimize` key, then register our JS optimizer.
         # This uses closure, but you could use cactus.contrib.external.yui.YUIJSOptimizer!
-        site.external_manager.register_optimizer(ClosureJSOptimizer)
+        site.external_manager.register_optimizer(YUIJSOptimizer)
 
     if "css" in optimize:
         # Same thing for CSS.
