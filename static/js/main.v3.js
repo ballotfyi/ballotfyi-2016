@@ -72,6 +72,7 @@ ITC_Bld.load().then(function () {
   addFontClass('.prop-title',' bold-type-loaded');
   addFontClass('.prop-subtitle',' bold-type-loaded');
   addFontClass('.index-prop-title',' bold-type-loaded');
+  addFontClass('.index-prop-subtitle',' bold-type-loaded');
   addFontClass('h2',' bold-type-loaded');
 });
 ITC_Bk.load().then(function () {

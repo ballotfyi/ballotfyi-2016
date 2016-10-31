@@ -420,7 +420,9 @@ $transition: all #{$speed} ease-out;
 	width: 360px;
 	left: 15px;
 	bottom: 0;
-	@include helvetica-font;
+	// @include helvetica-font;
+	@include sans-serif-font;
+
 	font-size: 12pt;
 	line-height: 15pt;
 	color: white;
