@@ -281,9 +281,11 @@ ul {
   width: 360px;
   left: 15px;
   bottom: 0;
-  font-family: 'Helvetica Neue', Helvetica, 'Helvetica-bd', sans-serif;
+  font-family: Helvetica, sans-serif;
+  font-size: 18pt;
+  line-height: 23pt;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   font-size: 12pt;
   line-height: 15pt;
   color: white; }
