@@ -5,6 +5,12 @@ $(function() {
   registerSortButtons();
   var sortedBy = getParameterByName('sort');
   if(sortedBy){sortBy(sortedBy, sortedBy)};
+
+  if ('addEventListener' in document) {
+   document.addEventListener('DOMContentLoaded', function() {
+       FastClick.attach(document.body);
+   }, false);
+ }
 });
 
 function scrollToAnchor() {
@@ -90,6 +96,8 @@ function addFontClass( query, classToAdd ) {
     }
   }
 }
+
+
 
 function registerSortButtons () {
   $('#sortByNastyBtn').on('click', function(){ sortBy("nasty","nasty"); });
