@@ -836,6 +836,21 @@ ul {
         right: 25px;   }
 }
 
+.global-nav {
+  margin-top: 60px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10pt;
+  color: #777;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .global-nav a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none; }
+
 .p60-color, .p65-color, .p67-color {
   background: #ffb558;
   background: -webkit-linear-gradient(left, #ffb558, #ff7e2c);

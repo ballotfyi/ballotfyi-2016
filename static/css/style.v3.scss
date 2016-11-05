@@ -1006,6 +1006,23 @@ sup {
 	}
 }
 
+.global-nav {
+	margin-top: 60px;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	color: #777;
+
+
+	width: 100%;
+	@include center-content;
+	text-align: center;
+	a {
+		color: #000;
+		font-weight: bold;
+		text-decoration: none;
+	}
+}
+
 /* colors */
 
 /*
