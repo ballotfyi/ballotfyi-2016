@@ -1,5 +1,5 @@
 [Settings]
-ID = "ballot_fyi_2016"
+ID = "ballot_fyi"
 
 [build]
   publish = ".deploy"
